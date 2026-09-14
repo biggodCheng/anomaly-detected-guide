@@ -3,12 +3,49 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { alternatesFor } from '@/lib/alternates'
 import { Hero } from '@/components/home/hero'
 import { GameTrailer } from '@/components/home/game-trailer'
-import { PopularGuides } from '@/components/home/popular-guides'
-import { CoreTopics } from '@/components/home/core-topics'
-import { PopularQuestions } from '@/components/home/popular-questions'
-import { FeaturedEntities } from '@/components/home/featured-entities'
-import { LatestUpdates } from '@/components/home/latest-updates'
-import { HomeFaq } from '@/components/home/home-faq'
+import dynamic from 'next/dynamic'
+
+// 下方折叠组件 dynamic import:首屏只渲染 Hero + Trailer(above-fold),
+// 其余 chunk 延迟加载。每个组件 <1KB 的 loading 骨架(纯视觉,无 role)。
+// LCP 不受影响(Hero 是 LCP 候选);TBT 因 JS 水合量减少而改善。
+const PopularGuides = dynamic(
+  () => import('@/components/home/popular-guides').then((m) => ({ default: m.PopularGuides })),
+  { loading: () => <SectionSkeleton />, ssr: true },
+)
+const CoreTopics = dynamic(
+  () => import('@/components/home/core-topics').then((m) => ({ default: m.CoreTopics })),
+  { loading: () => <SectionSkeleton />, ssr: true },
+)
+const PopularQuestions = dynamic(
+  () => import('@/components/home/popular-questions').then((m) => ({ default: m.PopularQuestions })),
+  { loading: () => <SectionSkeleton />, ssr: true },
+)
+const FeaturedEntities = dynamic(
+  () => import('@/components/home/featured-entities').then((m) => ({ default: m.FeaturedEntities })),
+  { loading: () => <SectionSkeleton />, ssr: true },
+)
+const LatestUpdates = dynamic(
+  () => import('@/components/home/latest-updates').then((m) => ({ default: m.LatestUpdates })),
+  { loading: () => <SectionSkeleton />, ssr: true },
+)
+const HomeFaq = dynamic(
+  () => import('@/components/home/home-faq').then((m) => ({ default: m.HomeFaq })),
+  { loading: () => <SectionSkeleton />, ssr: true },
+)
+
+function SectionSkeleton() {
+  return (
+    <div className="animate-pulse space-y-4 rounded-xl border border-[var(--color-border)]/50 bg-[var(--color-card)]/30 p-6">
+      <div className="h-6 w-48 rounded bg-[var(--color-muted)]" />
+      <div className="h-4 w-72 rounded bg-[var(--color-muted)]/60" />
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <div key={i} className="h-20 rounded-lg bg-[var(--color-muted)]/40" />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export async function generateMetadata({
   params,

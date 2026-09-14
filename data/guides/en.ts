@@ -309,6 +309,16 @@ export const enGuides: Guide[] = [
           'What time travel games are on Steam? — Most of the titles above are on Steam. Search "time travel" on Steam for the full current catalog.',
         ],
       },
+      {
+        heading: 'Related Guides',
+        body: 'Looking for more? Check out our other recommendations:',
+        items: [
+          'Anomaly Detection Games Online — Free browser-based anomaly games you can play right now.',
+          'Games Like Observation Duty — 12+ anomaly-spotting games sorted by type and difficulty.',
+          'Anomaly Horror Games — Best anomaly horror games ranked by terror level.',
+          'Release Date Tracker — Latest status and wishlist guide for ANOMAL.',
+        ],
+      },
     ],
   },
   {

@@ -4,9 +4,22 @@ import { getAllGuides } from '@/data/guides'
 import { type Locale } from '@/i18n/routing'
 import { localePath } from '@/lib/site'
 
+// SEO-optimized guides to highlight on homepage (in priority order)
+const FEATURED_SLUGS = [
+  'time-travel-puzzle-games',
+  'anomaly-detection-games-online',
+  'games-like-observation-duty',
+  'anomaly-horror-games',
+  'beginner-guide',
+]
+
 export async function PopularGuides({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'Home' })
-  const guides = getAllGuides(locale as Locale)
+  const allGuides = getAllGuides(locale as Locale)
+  // Show featured SEO guides first, then remaining guides
+  const featured = FEATURED_SLUGS.map((slug) => allGuides.find((g) => g.slug === slug)).filter(Boolean)
+  const remaining = allGuides.filter((g) => !FEATURED_SLUGS.includes(g.slug))
+  const guides = [...featured, ...remaining]
   return (
     <section>
       <h2 className="section-title mb-6 text-2xl font-bold tracking-tight">{t('popularGuides.title')}</h2>

@@ -113,6 +113,25 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${cinzel.variable}`} suppressHydrationWarning>
       <head>
+        {/* Preconnect:提前 DNS+TCP+TLS 握手,后续请求省 ~150-300ms(RTT 150ms 低速 4G)。
+            只连首屏确实会用到的 origin;每多一个 preconnect 占一个 socket 池位(Chrome 6/HTTP1)。 */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://i.ytimg.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        {/* Preload LCP 候选:hero 图。sizes 匹配 hero.tsx 的 HERO_SIZES,
+            type 用 AVIF(最小);fetchpriority=high 让浏览器优先取它而非 CSS/字体。
+            静态导出无 next/image loader,手工 preload 是 LCP <2.5s 的关键。 */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-anomaly-header-1730.avif"
+          type="image/avif"
+          imagesizes="(min-width: 1152px) 1120px, calc(100vw - 32px)"
+          fetchpriority="high"
+        />
         <GoogleAnalytics />
       </head>
       <body>

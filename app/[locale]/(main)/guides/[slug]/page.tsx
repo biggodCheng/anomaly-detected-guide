@@ -6,7 +6,7 @@ import { getAllGuides, getGuide, guideSlugs } from '@/data/guides'
 import { DEEP_DIVES } from '@/data/guides/deep-dives'
 import { GuideSection } from '@/components/guides/guide-section'
 import { Breadcrumb } from '@/components/seo/breadcrumb'
-import { StructuredData, articleSchema, faqSchema } from '@/components/seo/structured-data'
+import { StructuredData, articleSchema, faqSchema, itemListSchema } from '@/components/seo/structured-data'
 import { type Locale } from '@/i18n/routing'
 import { alternatesFor } from '@/lib/alternates'
 import { formatHumanDate } from '@/lib/date'
@@ -68,6 +68,16 @@ export default async function GuidePage({
     })
     .filter((item): item is { question: string; answer: string } => item !== null) ?? []
 
+  // Detect comparison tables for ItemList schema (Top Picks / Best Games sections)
+  const tableSection = g.sections.find((s) => /top picks|best|comparison|ranked/i.test(s.heading) && s.table)
+  const itemListItems = tableSection?.table
+    ? tableSection.table.rows.slice(0, 15).map((row, i) => ({
+        name: row[0] || '',
+        description: row.slice(1).join(', '),
+        position: i + 1,
+      }))
+    : []
+
   return (
     <article>
       <Breadcrumb locale={locale} parents={['guide']} leaf={g.title} path={`/guides/${slug}`} />
@@ -81,6 +91,15 @@ export default async function GuidePage({
         })}
       />
       {faqItems.length > 0 && <StructuredData schema={faqSchema(faqItems)} />}
+      {itemListItems.length > 0 && (
+        <StructuredData
+          schema={itemListSchema({
+            name: tableSection?.heading || g.title,
+            url: absoluteUrl(locale, `/guides/${slug}`),
+            items: itemListItems,
+          })}
+        />
+      )}
 
       <h1 className="flex items-center gap-3 font-display text-3xl font-bold tracking-tight">
         <span className="text-4xl">{g.icon}</span> {g.title}
