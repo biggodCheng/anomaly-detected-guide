@@ -114,7 +114,7 @@ html {
   --secondary: #e6efe4;
   --secondary-foreground: #1c3a1e;
   --muted: #edf1ea;
-  --muted-foreground: #57685a;
+  --muted-foreground: #4a5a4d;
   --accent: #ea580c;
   --accent-foreground: #ffffff;
   --color-primary-bg: #dcefe0;
@@ -163,7 +163,7 @@ html {
   --secondary: #0a0a0a;
   --secondary-foreground: #39ff14;
   --muted: #0a0a0a;
-  --muted-foreground: #666666;
+  --muted-foreground: #8a8a8a;
   --accent: #ff6600;
   --accent-foreground: #ffffff;
   --color-primary-bg: #0d2e0d;
