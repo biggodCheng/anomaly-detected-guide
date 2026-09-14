@@ -154,3 +154,47 @@ export function howToSchema({ name, description, url, steps, totalTime, locale }
     },
   }
 }
+
+type FaqItem = {
+  question: string
+  answer: string
+}
+
+export function faqSchema(items: FaqItem[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  }
+}
+
+type ItemListItem = {
+  name: string
+  description?: string
+  url?: string
+  position: number
+}
+
+export function itemListSchema({ name, description, url, items }: { name: string; description?: string; url?: string; items: ItemListItem[] }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    ...(name ? { name } : {}),
+    ...(description ? { description } : {}),
+    ...(url ? { url } : {}),
+    itemListElement: items.map((item) => ({
+      '@type': 'ListItem',
+      position: item.position,
+      name: item.name,
+      ...(item.description ? { description: item.description } : {}),
+      ...(item.url ? { url: item.url } : {}),
+    })),
+  }
+}

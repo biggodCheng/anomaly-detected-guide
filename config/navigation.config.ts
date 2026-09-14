@@ -42,6 +42,11 @@ export const NAV_SECTIONS: NavSection[] = [
     items: [
       { href: '/guides', labelKey: 'allGuides', surfaces: ['sidebar'], footerColumn: 'guides', labelKeyBySurface: { footer: 'allGuides' } },
       { href: '/guides/beginner-guide', labelKey: 'beginnerGuide', surfaces: ['header', 'footer', 'sidebar'], footerColumn: 'guides' },
+      { href: '/guides/time-travel-puzzle-games', labelKey: 'timeTravelGames', surfaces: ['sidebar'], footerColumn: 'guides' },
+      { href: '/guides/anomaly-detection-games-online', labelKey: 'anomalyGamesOnline', surfaces: ['sidebar'], footerColumn: 'guides' },
+      { href: '/guides/games-like-observation-duty', labelKey: 'gamesLikeObservationDuty', surfaces: ['sidebar'], footerColumn: 'guides' },
+      { href: '/guides/anomal-release-date', labelKey: 'releaseDate', surfaces: ['sidebar'], footerColumn: 'guides' },
+      { href: '/guides/anomaly-horror-games', labelKey: 'anomalyHorror', surfaces: ['sidebar'], footerColumn: 'guides' },
       { href: '/mechanics', labelKey: 'mechanics', surfaces: ['footer', 'sidebar'], footerColumn: 'reference' },
       { href: '/guide', labelKey: 'guide', surfaces: ['footer', 'sidebar'], footerColumn: 'guides' },
     ],

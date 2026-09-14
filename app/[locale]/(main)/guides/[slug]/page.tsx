@@ -6,7 +6,7 @@ import { getAllGuides, getGuide, guideSlugs } from '@/data/guides'
 import { DEEP_DIVES } from '@/data/guides/deep-dives'
 import { GuideSection } from '@/components/guides/guide-section'
 import { Breadcrumb } from '@/components/seo/breadcrumb'
-import { StructuredData, articleSchema } from '@/components/seo/structured-data'
+import { StructuredData, articleSchema, faqSchema } from '@/components/seo/structured-data'
 import { type Locale } from '@/i18n/routing'
 import { alternatesFor } from '@/lib/alternates'
 import { formatHumanDate } from '@/lib/date'
@@ -49,6 +49,25 @@ export default async function GuidePage({
   if (!g) notFound()
   const others = getAllGuides(locale as Locale).filter((o) => o.slug !== g.slug)
 
+  // Detect FAQ section and extract Q&A pairs
+  const faqSection = g.sections.find((s) => /faq|frequently asked questions/i.test(s.heading))
+  const faqItems = faqSection?.items
+    ?.filter((item) => item.includes(' — ') || item.includes(' – ') || item.includes(' - '))
+    ?.map((item) => {
+      const separators = [' — ', ' – ', ' - ']
+      for (const sep of separators) {
+        const idx = item.indexOf(sep)
+        if (idx > 0) {
+          return {
+            question: item.slice(0, idx).trim(),
+            answer: item.slice(idx + sep.length).trim(),
+          }
+        }
+      }
+      return null
+    })
+    .filter((item): item is { question: string; answer: string } => item !== null) ?? []
+
   return (
     <article>
       <Breadcrumb locale={locale} parents={['guide']} leaf={g.title} path={`/guides/${slug}`} />
@@ -61,6 +80,7 @@ export default async function GuidePage({
           dateModified: g.lastUpdated,
         })}
       />
+      {faqItems.length > 0 && <StructuredData schema={faqSchema(faqItems)} />}
 
       <h1 className="flex items-center gap-3 font-display text-3xl font-bold tracking-tight">
         <span className="text-4xl">{g.icon}</span> {g.title}

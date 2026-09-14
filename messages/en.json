@@ -44,7 +44,12 @@
       "officialWebsite": "Steam Store Page",
       "about": "About",
       "contact": "Contact",
-      "privacy": "Privacy"
+      "privacy": "Privacy",
+      "timeTravelGames": "Time Travel Games",
+      "anomalyGamesOnline": "Anomaly Games Online",
+      "gamesLikeObservationDuty": "Games Like Observation Duty",
+      "releaseDate": "Release Date",
+      "anomalyHorror": "Anomaly Horror Games"
     },
     "copyright1": "ANOMAL Guide is an unofficial fan-made guide. ANOMAL is a trademark of Alexis Roumier.",
     "copyright2": "Not affiliated with or endorsed by Alexis Roumier."
@@ -71,7 +76,12 @@
       "game": "Game Info",
       "steam": "Steam",
       "systemRequirements": "System Requirements",
-      "controls": "Controls"
+      "controls": "Controls",
+      "timeTravelGames": "Time Travel Games",
+      "anomalyGamesOnline": "Anomaly Games Online",
+      "gamesLikeObservationDuty": "Games Like Observation Duty",
+      "releaseDate": "Release Date",
+      "anomalyHorror": "Anomaly Horror Games"
     }
   },
   "Search": {
