@@ -56,7 +56,9 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
     <div className="overflow-hidden rounded-xl border border-[var(--color-border)] shadow-lg">
       <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
         {/* 缩略图:loading=lazy 因为 trailer 在 hero 下方(非 LCP);
-            decoding=async 不阻塞首屏渲染 */}
+            decoding=async 不阻塞首屏渲染。
+            eslint-disable:静态导出无 image loader,缩略图来自 i.ytimg.com 第三方域 */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={thumbnailUrl}
           alt={title}

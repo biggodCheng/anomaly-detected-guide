@@ -27,4 +27,29 @@ export const DEEP_DIVES: Record<string, DeepDive[]> = {
     { href: codexPath(), icon: '🔍', en: 'All Four Cases' },
     { href: milestonePath(), icon: '⏳', en: 'Timeline Overview' },
   ],
+  'time-travel-puzzle-games': [
+    { href: '/game/steam', icon: '🎮', en: 'Wishlist on Steam' },
+    { href: '/mechanics', icon: '⚙️', en: 'Game Mechanics' },
+    { href: '/guides/anomal-release-date', icon: '📅', en: 'Release Tracker' },
+  ],
+  'anomaly-detection-games-online': [
+    { href: '/mechanics', icon: '⚙️', en: 'Anomaly Detection Tips' },
+    { href: codexPath(), icon: '🔍', en: 'All Four Cases' },
+    { href: '/guides/games-like-observation-duty', icon: '📹', en: 'Similar Games' },
+  ],
+  'games-like-observation-duty': [
+    { href: codexPath(), icon: '🔍', en: 'All Four Cases' },
+    { href: '/mechanics', icon: '⚙️', en: 'Game Mechanics' },
+    { href: '/guides/anomaly-detection-games-online', icon: '👁️', en: 'Online Games' },
+  ],
+  'anomal-release-date': [
+    { href: '/game/steam', icon: '🎮', en: 'Steam Wishlist' },
+    { href: '/game', icon: '🎯', en: 'Game Overview' },
+    { href: '/guides/time-travel-puzzle-games', icon: '🕰️', en: 'Time Travel Games' },
+  ],
+  'anomaly-horror-games': [
+    { href: codexPath(), icon: '🔍', en: 'All Four Cases' },
+    { href: '/mechanics', icon: '⚙️', en: 'Game Mechanics' },
+    { href: '/guides/anomaly-detection-games-online', icon: '👁️', en: 'Online Games' },
+  ],
 }
