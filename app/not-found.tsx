@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { GoogleAnalytics } from '@/components/analytics/google-analytics'
 import { codexPath, milestonePath, regionPath, economyPath, achievementPath } from '@/lib/domain-slugs'
 import { siteConfig } from '@/lib/site'
 
@@ -37,6 +38,7 @@ export default function NotFound() {
           body { background: var(--bg); color: var(--fg); margin: 0; font-family: system-ui, sans-serif; }
         ` }} />
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var p=localStorage.getItem('theme');if(p==='dark'||(p==null&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')}catch(e){}})()` }} />
+        <GoogleAnalytics />
       </head>
       <body>
         <div style={{ maxWidth: '640px', margin: '0 auto', padding: '5rem 1.5rem', textAlign: 'center' }}>
