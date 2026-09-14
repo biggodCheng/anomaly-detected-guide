@@ -187,7 +187,8 @@
       "investigation": "Investigation",
       "mechanics": "Mechanics",
       "completion": "100% & Completion",
-      "walkthroughs": "Walkthroughs"
+      "walkthroughs": "Walkthroughs",
+      "recommendations": "Recommendations"
     },
     "moreGuides": {
       "cards": {
@@ -206,6 +207,18 @@
         "beginner": {
           "title": "Beginner Guide",
           "desc": "First steps and core mechanics"
+        },
+        "timeTravelGames": {
+          "title": "Time Travel Puzzle Games",
+          "desc": "Best time travel puzzle games to download in 2026"
+        },
+        "anomalyGamesOnline": {
+          "title": "Anomaly Games Online",
+          "desc": "Free anomaly detection games you can play in your browser"
+        },
+        "gamesLikeObservationDuty": {
+          "title": "Games Like Observation Duty",
+          "desc": "12+ anomaly-spotting games sorted by type and difficulty"
         }
       },
       "title": "More Guides"

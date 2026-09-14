@@ -3,13 +3,14 @@
 // MORE_GUIDES.path:站点根相对路径(无前导斜杠;hub 渲染为 `/${path}`)。
 import type { GuideCategory } from './en'
 
-export const CATEGORY_ORDER: GuideCategory[] = ['gettingStarted', 'walkthroughs', 'investigation', 'mechanics']
+export const CATEGORY_ORDER: GuideCategory[] = ['gettingStarted', 'walkthroughs', 'investigation', 'mechanics', 'recommendations']
 
 export const CATEGORY_KEYS: Record<GuideCategory, string> = {
   gettingStarted: 'gettingStarted',
   walkthroughs: 'walkthroughs',
   investigation: 'investigation',
   mechanics: 'mechanics',
+  recommendations: 'recommendations',
 }
 
 // More Guides 入口卡片:key 对应 Guides.moreGuides.cards.{key}
@@ -18,4 +19,7 @@ export const MORE_GUIDES = [
   { key: 'cases', path: 'guides/cases-walkthrough' },
   { key: 'timeline', path: 'guides/timeline-reconstruction' },
   { key: 'mechanics', path: 'guides/mechanics-explained' },
+  { key: 'timeTravelGames', path: 'guides/time-travel-puzzle-games' },
+  { key: 'anomalyGamesOnline', path: 'guides/anomaly-detection-games-online' },
+  { key: 'gamesLikeObservationDuty', path: 'guides/games-like-observation-duty' },
 ] as const

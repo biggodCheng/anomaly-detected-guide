@@ -4,11 +4,19 @@ import { CATEGORY_ORDER } from './taxonomy'
 import { siteConfig } from '@/config/site.config'
 import { siteNameFor } from '@/lib/seo'
 
-const SLUGS = ['beginner-guide', 'cases-walkthrough', 'timeline-reconstruction', 'mechanics-explained']
+const SLUGS = [
+  'beginner-guide',
+  'cases-walkthrough',
+  'timeline-reconstruction',
+  'mechanics-explained',
+  'time-travel-puzzle-games',
+  'anomaly-detection-games-online',
+  'games-like-observation-duty',
+]
 
 describe('guides data integrity', () => {
-  it('has the 4 pillar guides with unique slugs', () => {
-    expect(enGuides).toHaveLength(4)
+  it('has the 7 pillar guides with unique slugs', () => {
+    expect(enGuides).toHaveLength(7)
     expect(enGuides.map((g) => g.slug).sort()).toEqual([...SLUGS].sort())
   })
   it('every guide has valid category, dates and 4+ sections', () => {
