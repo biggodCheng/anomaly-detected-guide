@@ -23,10 +23,8 @@ html {
 }
 
 @theme {
-  /* CRT 终端主题：磷光绿 + 深黑背景 + 故障橙 */
-  --color-primary-bg: #0d2e0d;
-  --color-secondary-bg: #1a1a1a;
-  --color-accent-bg: #3d1a00;
+  /* CRT 终端主题：磷光绿 + 深黑背景 + 故障橙
+     (品牌底色 *-bg 随亮暗切换,定义在 :root/.dark —— sidebar 激活态等消费) */
 
   /* 状态色 */
   --color-success: var(--success);
@@ -102,21 +100,26 @@ html {
 }
 
 :root {
-  /* CRT 终端主题：磷光绿 + 深黑背景 + 故障橙 */
-  --background: #0a0a0a;
-  --foreground: #39ff14;
-  --card: #0d0d0d;
-  --card-foreground: #39ff14;
-  --popover: #0d0d0d;
-  --popover-foreground: #39ff14;
-  --primary: #39ff14;
-  --primary-foreground: #0a0a0a;
-  --secondary: #0a0a0a;
-  --secondary-foreground: #39ff14;
-  --muted: #0a0a0a;
-  --muted-foreground: #666666;
-  --accent: #ff6600;
+  /* CRT 终端主题·亮色(磷光绿的"荧光纸"变体:浅绿纸底 + 深绿字,品牌同色相)。
+     暗色版本见 .dark —— next-themes attribute="class" 切换,两套值必须不同,
+     否则切换无视觉变化(site.config.json theme 登记本套三主色,site.test 守护)。 */
+  --background: #f2f5ee;
+  --foreground: #1c3a1e;
+  --card: #ffffff;
+  --card-foreground: #1c3a1e;
+  --popover: #ffffff;
+  --popover-foreground: #1c3a1e;
+  --primary: #15803d;
+  --primary-foreground: #ffffff;
+  --secondary: #e6efe4;
+  --secondary-foreground: #1c3a1e;
+  --muted: #edf1ea;
+  --muted-foreground: #57685a;
+  --accent: #ea580c;
   --accent-foreground: #ffffff;
+  --color-primary-bg: #dcefe0;
+  --color-secondary-bg: #e6efe4;
+  --color-accent-bg: #fdeadd;
   /* 字体（由 next/font 注入 --font-inter 等；@theme inline 桥接到 font-sans 工具类） */
   --font-sans: var(--font-inter), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
@@ -124,14 +127,14 @@ html {
   --success: #16a34a;
   --warning: #d97706;
   --info: #2563eb;
-  --border: #0a0a0a;
-  --input: #0a0a0a;
-  --ring: #39ff14;
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --border: #dce5da;
+  --input: #dce5da;
+  --ring: #15803d;
+  --chart-1: #16a34a;
+  --chart-2: #d97706;
+  --chart-3: #0d9488;
+  --chart-4: oklch(0.556 0 0);
+  --chart-5: oklch(0.371 0 0);
   --radius: 0.625rem;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
@@ -148,7 +151,7 @@ html {
 }
 
 .dark {
-  /* CRT 终端主题：暗色即默认，保持一致 */
+  /* CRT 终端主题·暗色(默认):深黑底 + 磷光绿 —— 亮色变体见 :root */
   --background: #0a0a0a;
   --foreground: #39ff14;
   --card: #0d0d0d;
@@ -163,6 +166,9 @@ html {
   --muted-foreground: #666666;
   --accent: #ff6600;
   --accent-foreground: #ffffff;
+  --color-primary-bg: #0d2e0d;
+  --color-secondary-bg: #1a1a1a;
+  --color-accent-bg: #3d1a00;
   --destructive: #dc2626;
   --success: #16a34a;
   --warning: #f59e0b;
