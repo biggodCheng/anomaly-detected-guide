@@ -45,7 +45,7 @@ export const enErasData: ErasData = {
       slug: 'emerald-canopy',
       order: 2,
       name: 'Emerald Canopy',
-      timePeriod: '16th Century — Conquistador Era',
+      timePeriod: '16th — Conquistador',
       description:
         'A suffocatingly dense jungle where time moves differently beneath the canopy. The air is thick with humidity and the sound of insects — except where it isn\'t. Pockets of absolute silence dot the landscape, places where the jungle holds its breath. A conquistador\'s expedition vanished here centuries ago. Their armor is still warm.',
       environment:

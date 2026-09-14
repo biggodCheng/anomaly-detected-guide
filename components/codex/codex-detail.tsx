@@ -5,7 +5,7 @@ import { getRegion } from '@/data/regions'
 import { Breadcrumb } from '@/components/seo/breadcrumb'
 import { StructuredData, articleSchema } from '@/components/seo/structured-data'
 import { alternatesFor } from '@/lib/alternates'
-import { buildOpenGraph, buildTwitterCard } from '@/lib/seo'
+import { buildOpenGraph, buildTwitterCard, clampDescription } from '@/lib/seo'
 import { absoluteUrl, localePath } from '@/lib/site'
 import { codexEntryPath, regionEntryPath } from '@/lib/domain-slugs'
 
@@ -14,7 +14,7 @@ export async function codexDetailMetadata(locale: string, slug: string) {
   if (!m) return {}
   const t = await getTranslations({ locale, namespace: 'CodexDetail' })
   const title = `${m.name} - ${t('metaTitle')}`
-  const description = `${m.name}: ${m.description.slice(0, 140)}...`
+  const description = clampDescription(`${m.name}: ${m.description}`, 155)
   return {
     alternates: alternatesFor(locale, codexEntryPath(slug)),
     title,

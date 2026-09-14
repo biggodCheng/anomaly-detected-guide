@@ -98,9 +98,9 @@
   },
   "Home": {
     "siteDescription": "ANOMAL tips, guides and wiki covering cases, eras, clues, timeline reconstruction, achievements and game mechanics for the upcoming time-travel puzzle game.",
-    "metaDescription": "ANOMAL Guide: complete walkthrough for all 4 cases, 4 eras, clue cross-referencing, timeline reconstruction, achievements and time-travel puzzle mechanics.",
+    "metaDescription": "ANOMAL Guide: walkthroughs for all 4 cases, 4 eras, clue cross-referencing, timeline reconstruction and time-travel puzzle mechanics.",
     "title": "ANOMAL Guide - Cases, Eras & Clues",
-    "metaTitle": "ANOMAL Guide: Complete Walkthrough for Cases, Eras, Clues & Timeline",
+    "metaTitle": "ANOMAL Guide: Complete Walkthrough for Cases & Eras",
     "heroBadge": "Independent Fan Guide",
     "heroDescription": "Practical guides, case solutions, era breakdowns, clue cross-references, timeline reconstruction and achievement tracking for the ANOMAL time-travel puzzle game.",
     "ctaBeginner": "Start with the Beginner Guide",
@@ -355,7 +355,7 @@
     "index": {
       "title": "ANOMAL Eras - All 4 Historical Periods",
       "intro": "The four eras of the ANOMAL game: each historical period with its environment, cases set within it, and the clues unique to its landscape.",
-      "metaTitle": "All Eras: Historical Periods & Environments",
+      "metaTitle": "All Eras: Periods & Environments",
       "metaDescription": "ANOMAL eras guide: all 4 historical periods (Snowy Mountains, Jungle, Space Station, Arctic Facility) with environments, cases and era-specific clues.",
       "colCases": "Cases",
       "colEnvironment": "Environment",
@@ -418,7 +418,7 @@
     "index": {
       "title": "ANOMAL Strategy Guide - Investigation Tips",
       "intro": "Strategic advice for investigating cases in ANOMAL: how to approach each era, the most effective clue collection order, and tips for timeline reconstruction.",
-      "metaTitle": "Strategy Guide: Investigation Tips & Walkthrough",
+      "metaTitle": "Strategy Guide: Investigation Tips",
       "metaDescription": "ANOMAL strategy guide: investigation approach, clue collection order, note-taking methods and timeline reconstruction tips for all 4 cases."
     },
     "detail": {

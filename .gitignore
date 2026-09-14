@@ -49,3 +49,6 @@ lighthouse-report.html
 .tmp-*
 
 .claude
+
+# google search console inspection artifacts
+.gsc-data/

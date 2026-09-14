@@ -21,9 +21,9 @@ export type Guide = {
 export const enGuides: Guide[] = [
   {
     slug: 'beginner-guide',
-    title: 'Beginner Guide - First Steps & Core Mechanics',
+    title: 'Beginner Guide - First Steps',
     description:
-      'New to ANOMAL? This beginner guide explains the core gameplay loop: how to observe frozen 3D dioramas, collect clues, cross-reference evidence across eras, and reconstruct timelines to solve four impossible death puzzles.',
+      'New to ANOMAL? This beginner guide covers the core gameplay loop: observe frozen 3D dioramas, collect clues, cross-reference evidence across eras, and reconstruct timelines to solve puzzles.',
     icon: '🌱',
     category: 'gettingStarted',
     published: '2026-09-01',
@@ -71,7 +71,7 @@ export const enGuides: Guide[] = [
   },
   {
     slug: 'cases-walkthrough',
-    title: 'Cases Walkthrough - All Four Impossible Deaths',
+    title: 'Cases Walkthrough - Solutions',
     description:
       'Complete walkthrough for all four cases in ANOMAL: The Frozen Flame, The Conquistador\'s Grave, The Void Drifter, and The Stone Oracle. Each case solution with step-by-step clue analysis.',
     icon: '🔍',
@@ -127,7 +127,7 @@ export const enGuides: Guide[] = [
   },
   {
     slug: 'timeline-reconstruction',
-    title: 'Timeline Reconstruction - Connecting the Four Eras',
+    title: 'Timeline Reconstruction Guide',
     description:
       'How to reconstruct the timeline in ANOMAL: connect events across the Frozen Heights, Emerald Canopy, Orbital Station, and Buried Temple eras to uncover the anomaly that ties all four cases together.',
     icon: '⏳',
@@ -165,9 +165,9 @@ export const enGuides: Guide[] = [
   },
   {
     slug: 'mechanics-explained',
-    title: 'Mechanics Explained - Time Travel & Observation',
+    title: 'Mechanics Explained - Time Travel',
     description:
-      'Every game mechanic in ANOMAL explained: the observation system, clue types (physical, temporal, supernatural), timeline reconstruction, cross-referencing, and the CRT terminal interface.',
+      'Every ANOMAL mechanic explained: observation system, clue types (physical, temporal, supernatural), timeline reconstruction, cross-referencing and the CRT terminal interface.',
     icon: '⚙️',
     category: 'mechanics',
     published: '2026-09-01',

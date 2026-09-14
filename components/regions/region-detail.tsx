@@ -110,7 +110,7 @@ export function regionDetailGenerateStaticParams() {
 export async function regionDetailMetadata(locale: string, slug: string) {
   const region = getRegion(slug)
   if (!region) return {}
-  const title = `${region.name} Era Guide - ${region.timePeriod}`
+  const title = `${region.name} - ${region.timePeriod}`
   const description = clampDescription(
     `Era ${region.order} (${region.name}): ${region.timePeriod} in the ${siteConfig.game.name} game. ${region.cases.length} case${region.cases.length === 1 ? '' : 's'}, clues and walkthrough for this historical period.`,
     160
