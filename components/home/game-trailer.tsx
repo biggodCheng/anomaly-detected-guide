@@ -2,9 +2,8 @@ import { getTranslations } from 'next-intl/server'
 import { YouTubeEmbed } from '@/components/ui/youtube-embed'
 
 //  换皮时替换 videoId 为当前游戏的官方 trailer ID(SOP Step 4 品牌资源 + 5 验证)。
-// 占位值来自 The Blood of Dawnwalker reveal trailer(AH1agOznQo8),
-// 模板无自有游戏 trailer,重跑 node scripts/generate-favicons.mjs 同批次更新。
-const TRAILER_VIDEO_ID = 'AH1agOznQo8'
+// 当前值来自 ANOMAL 官方 trailer(bOp7W7f7EDw)。
+const TRAILER_VIDEO_ID = 'bOp7W7f7EDw'
 
 export async function GameTrailer({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'Home' })
