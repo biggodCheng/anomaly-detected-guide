@@ -1,0 +1,51 @@
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+build/
+
+# pagefind index (generated)
+public/pagefind/
+
+# misc OS files
+.DS_Store
+Thumbs.db
+*.pem
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# superpowers visual companion (temp mockups)
+.superpowers/
+
+# playwright mcp session artifacts
+.playwright-mcp/
+
+# firecrawl local cache
+.firecrawl/
+
+# lighthouse report artifact
+lighthouse-report.html
+.lhci/
+
+# root images/ duplicate (canonical: public/images/)
+/images/
+
+# skill working temp files (keyword research, disclosure drafts)
+.tmp-*
+
+.claude

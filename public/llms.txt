@@ -1,0 +1,77 @@
+# ANOMAL Guide - Independent Fan Guide
+
+> Comprehensive guide and wiki for the "ANOMAL" puzzle game by Alexis Roumier. An unofficial fan-made resource covering all cases, eras, clues, timeline reconstruction and game mechanics.
+
+## What is ANOMAL?
+
+ANOMAL is a time-travel puzzle game by French indie developer Alexis Roumier. Players investigate four impossible deaths across four different eras — a mountaineer burnt in untouched snow, a conquistador dead with no wound, an astronaut erased in a sealed station, and a figure petrified on an ancient throne. There is no combat, no timer, and no fail state. The core loop is: observe the frozen 3D diorama → collect clues → cross-reference evidence across eras → reconstruct the timeline to solve each impossible death.
+
+**Key Facts:**
+- Developer: Alexis Roumier (French indie developer, self-published)
+- Platform: Windows (Steam)
+- Release: TBA (game has not been released yet)
+- Content: 4 cases, 4 eras, 12 clues, 1 anomaly
+- Languages: English, French
+- Features: Single-player, Family Sharing
+- Style: Retro-futuristic CRT terminal aesthetic (phosphor green, scan lines, glitch effects)
+- Steam page: [ANOMAL Game Info](https://anomalydetected.fun/game)
+
+**Core Mechanics:**
+- Observe frozen 3D dioramas from every angle
+- Collect physical, temporal, and supernatural clues
+- Cross-reference evidence across four different eras
+- Reconstruct the timeline to solve each impossible death
+- All four cases connect through a single anomaly
+
+Content: 4 cases, 8 timeline events, 4 eras, 10 achievements
+
+## Site Structure
+
+### Getting Started
+- [**Beginner Guide**](https://anomalydetected.fun/guides/beginner-guide) — First steps, core mechanics, controls, and tips for new players
+- [**Cases Walkthrough**](https://anomalydetected.fun/guides/cases-walkthrough) — Complete solutions for all four cases
+- [**Timeline Reconstruction**](https://anomalydetected.fun/guides/timeline-reconstruction) — How to connect the four eras
+- [**Mechanics Explained**](https://anomalydetected.fun/guides/mechanics-explained) — Deep dive into every game mechanic
+
+### Cases & Investigation
+- [**All Cases (4)**](https://anomalydetected.fun/cases) — The four impossible death puzzles: Frozen Flame, Conquistador's Grave, Void Drifter, Stone Oracle
+  - [The Frozen Flame](https://anomalydetected.fun/cases/frozen-flame) — Mountaineer burnt in undisturbed snow (Frozen Heights era)
+  - [The Conquistador's Grave](https://anomalydetected.fun/cases/jungle-conquistador) — Conquistador dead with no wound (Emerald Canopy era)
+  - [The Void Drifter](https://anomalydetected.fun/cases/void-drifter) — Astronaut erased from sealed station (Orbital Station era)
+  - [The Stone Oracle](https://anomalydetected.fun/cases/stone-oracle) — Figure petrified on ancient throne (Buried Temple era)
+- [**Cases Walkthrough**](https://anomalydetected.fun/guides/cases-walkthrough) — Complete solutions for all four cases with step-by-step clue analysis
+
+### Eras
+- [**All Eras (4)**](https://anomalydetected.fun/eras) — The four time periods: Frozen Heights, Emerald Canopy, Orbital Station, Buried Temple
+  - [Frozen Heights](https://anomalydetected.fun/eras/frozen-heights) — 1980s Soviet mountain research station
+  - [Emerald Canopy](https://anomalydetected.fun/eras/emerald-canopy) — Jungle with ancient trees and conquistador-era mysteries
+  - [Orbital Station](https://anomalydetected.fun/eras/orbital-station) — Derelict space station in the far future
+  - [Buried Temple](https://anomalydetected.fun/eras/buried-temple) — Ancient underground temple existing outside normal time
+
+### Clues
+- [**All Clues**](https://anomalydetected.fun/clues) — Every collectible clue organized by type: physical, temporal, supernatural
+  - Frozen Heights clues: charred compass, station logbook, scorch marks in snow
+  - Emerald Canopy clues: intact armor, phantom water, ancient tree carvings
+  - Orbital Station clues: suit integrity report, frozen chronometer, viewport residue
+  - Buried Temple clues: unknown petrified stone, fresh offerings, prophetic murals
+
+### Timeline & Mechanics
+- [**Timeline**](https://anomalydetected.fun/timeline) — Reconstruct events across all four eras
+- [**Timeline Reconstruction Guide**](https://anomalydetected.fun/guides/timeline-reconstruction) — How to connect the four eras and uncover the anomaly
+- [**Game Mechanics**](https://anomalydetected.fun/mechanics) — Observation system, clue types, cross-referencing, CRT terminal interface
+- [**Mechanics Explained**](https://anomalydetected.fun/guides/mechanics-explained) — Deep dive into every game mechanic
+
+### Reference
+- [**Achievements**](https://anomalydetected.fun/achievements) — All achievements and how to unlock them
+- [**General Guide**](https://anomalydetected.fun/guide) — General tips and puzzle-solving strategies
+- [**FAQ**](https://anomalydetected.fun/faq) — Frequently asked questions about ANOMAL
+
+### Game Info
+- [**Game Overview**](https://anomalydetected.fun/game) — What ANOMAL is, developer info, and feature overview
+- [**Steam Page Info**](https://anomalydetected.fun/game/steam) — Buying ANOMAL on Steam, pricing, family sharing
+- [**System Requirements**](https://anomalydetected.fun/game/system-requirements) — Minimum and recommended PC specs
+- [**Controls**](https://anomalydetected.fun/game/controls) — Default keybindings and interaction guide
+
+## About This Site
+
+ANOMAL Guide is an unofficial fan-made resource. ANOMAL is a trademark of Alexis Roumier. This site is not affiliated with or endorsed by Alexis Roumier.

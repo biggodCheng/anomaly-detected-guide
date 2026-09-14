@@ -1,0 +1,439 @@
+{
+  "Nav": {
+    "cases": "Cases",
+    "timeline": "Timeline",
+    "eras": "Eras",
+    "clues": "Clues",
+    "achievements": "Achievements",
+    "mechanics": "Mechanics",
+    "guide": "Guide",
+    "explore": "Explore",
+    "guides": "Guides",
+    "community": "Community",
+    "beginnerGuide": "Beginner Guide",
+    "faq": "FAQ",
+    "regionComparison": "Era Comparison",
+    "skipToContent": "Skip to content"
+  },
+  "Header": {
+    "badge": "ANOMAL Guide",
+    "menu": "Menu",
+    "menuClose": "Close menu"
+  },
+  "Footer": {
+    "brand": "ANOMAL Guide",
+    "tagline": "Independent fan guide for the ANOMAL game.",
+    "columns": {
+      "guides": "Guides",
+      "reference": "Explore",
+      "official": "Official",
+      "legal": "Legal"
+    },
+    "links": {
+      "guides": "Guides",
+      "cases": "Cases",
+      "eras": "Eras",
+      "clues": "Clues",
+      "timeline": "Timeline",
+      "achievements": "Achievements",
+      "mechanics": "Mechanics",
+      "guide": "Guide",
+      "beginnerGuide": "Beginner Guide",
+      "faq": "FAQ",
+      "regionComparison": "Era Comparison",
+      "officialWebsite": "Steam Store Page",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy"
+    },
+    "copyright1": "ANOMAL Guide is an unofficial fan-made guide. ANOMAL is a trademark of Alexis Roumier.",
+    "copyright2": "Not affiliated with or endorsed by Alexis Roumier."
+  },
+  "Sidebar": {
+    "sections": {
+      "explore": "Explore",
+      "guides": "Guides",
+      "reference": "Reference",
+      "site": "Site"
+    },
+    "links": {
+      "cases": "Cases",
+      "eras": "Eras",
+      "clues": "Clues",
+      "timeline": "Timeline",
+      "achievements": "Achievements",
+      "mechanics": "Mechanics",
+      "guide": "Guide",
+      "allGuides": "All Guides",
+      "beginnerGuide": "Beginner Guide",
+      "faq": "FAQ",
+      "regionComparison": "Era Comparison",
+      "game": "Game Info",
+      "steam": "Steam",
+      "systemRequirements": "System Requirements",
+      "controls": "Controls"
+    }
+  },
+  "Search": {
+    "title": "Search",
+    "placeholder": "Search ANOMAL guides, cases, eras, clues...",
+    "empty": "No results",
+    "indexLoading": "Loading search index...",
+    "indexError": "Search is temporarily unavailable",
+    "close": "Close"
+  },
+  "Theme": {
+    "toggle": "Toggle theme"
+  },
+  "Breadcrumbs": {
+    "home": "Home",
+    "cases": "Cases",
+    "timeline": "Timeline",
+    "eras": "Eras",
+    "clues": "Clues",
+    "achievements": "Achievements",
+    "mechanics": "Mechanics",
+    "guide": "Guide",
+    "game": "Game Info"
+  },
+  "Home": {
+    "siteDescription": "ANOMAL tips, guides and wiki covering cases, eras, clues, timeline reconstruction, achievements and game mechanics for the upcoming time-travel puzzle game.",
+    "metaDescription": "ANOMAL Guide: complete walkthrough for all 4 cases, 4 eras, clue cross-referencing, timeline reconstruction, achievements and time-travel puzzle mechanics.",
+    "title": "ANOMAL Guide - Cases, Eras & Clues",
+    "metaTitle": "ANOMAL Guide: Complete Walkthrough for Cases, Eras, Clues & Timeline",
+    "heroBadge": "Independent Fan Guide",
+    "heroDescription": "Practical guides, case solutions, era breakdowns, clue cross-references, timeline reconstruction and achievement tracking for the ANOMAL time-travel puzzle game.",
+    "ctaBeginner": "Start with the Beginner Guide",
+    "ctaGuides": "Browse All Guides",
+    "stats": {
+      "cases": "4 Cases",
+      "eras": "4 Eras",
+      "clues": "Clues",
+      "achievements": "Achievements",
+      "anomaly": "1 Anomaly"
+    },
+    "popularQuestionsTitle": "Popular Questions",
+    "qStart": "How do I start investigating in ANOMAL?",
+    "qEras": "What are the 4 eras in ANOMAL?",
+    "qClues": "How do I cross-reference clues?",
+    "qTimeline": "How does timeline reconstruction work?",
+    "qMechanics": "What are the core mechanics of ANOMAL?",
+    "featured": {
+      "title": "Featured Cases & Eras",
+      "metaEra": "Era",
+      "metaCase": "Case",
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+      }
+    },
+    "latest": {
+      "title": "Latest Updates",
+      "guide": "Guide",
+      "case": "Case",
+      "era": "Era",
+      "clue": "Clue",
+      "eraTitle": "Era {order}: {name}"
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faqMore": "See all FAQ",
+    "coreHeading": "Start Here",
+    "coreSub": "What investigators look up most",
+    "coreBeginner": "Beginner Guide",
+    "coreBeginnerDesc": "Your first steps into temporal investigation, the interface, and the core observation loop",
+    "coreCases": "Cases",
+    "coreCasesDesc": "All 4 cases with objectives, clues and solution walkthroughs",
+    "coreEras": "Eras",
+    "coreErasDesc": "The 4 historical periods in investigation order with environment breakdowns",
+    "coreClues": "Clues",
+    "coreCluesDesc": "Every clue type, where to find them and how to cross-reference across eras",
+    "coreTimeline": "Timeline",
+    "coreTimelineDesc": "Reconstruct the sequence of events across all 4 eras and cases",
+    "coreAchievements": "Achievements",
+    "coreAchievementsDesc": "All achievements with unlock conditions and a local progress tracker",
+    "popularGuides": {
+      "title": "Popular Guides",
+      "subtitle": "Walkthroughs and strategy for the ANOMAL game."
+    },
+    "intro": {
+      "heading": "What is the ANOMAL game?",
+      "p1": "ANOMAL is a time-travel puzzle game developed by French independent developer Alexis Roumier. The game casts you as a temporal investigator tasked with solving mysterious deaths across four distinct historical periods. Each case presents a frozen 3D diorama, a snapshot of a moment in time where something went fatally wrong. Your job is to observe every detail of the frozen scene, collect physical and temporal clues scattered throughout the environment, cross-reference evidence across multiple eras, and reconstruct the timeline of events to determine what really happened. The entire experience is wrapped in a retro-futuristic CRT terminal aesthetic, complete with phosphor-green text, scan-line effects and subtle glitch animations that evoke the feeling of using an old surveillance terminal to review classified temporal records. The visual style is not merely decorative; it reinforces the fiction that you are an investigator working through a retro-futuristic interface, piecing together the truth from fragmented data streams and frozen moments in time.",
+      "p2": "The game is structured around four historical eras, each with its own distinct visual identity and environmental storytelling. The snowy mountains of the 1980s present a frozen alpine landscape where a mountaineering expedition went wrong, with clues buried under drifts of snow and scattered climbing equipment. The dense jungle era drops you into an overgrown temple complex where a botanical expedition met a grim fate, with vines reclaiming stone architecture and expedition journals left in abandoned camps. The space station era places you aboard a retro-futuristic orbital platform where a cosmonaut crew encountered something beyond their training, with zero-gravity dioramas and floating evidence that must be examined from every angle. The arctic research facility era grounds you in a sterile, isolated laboratory where a scientific team made a discovery that cost them their lives, with instrument readouts and research logs that provide critical context for the final deductions. Each era introduces new mechanics and environmental storytelling techniques that build on what came before.",
+      "p3": "The four cases in ANOMAL each center on a different mystery. The first case, set in the 1980s snowy mountains, presents a seemingly straightforward mountaineering accident that hides deeper temporal inconsistencies upon closer examination. The second case, in the jungle era, reveals connections between the expedition members and events in other time periods through carefully placed artifacts and journal entries. The third case aboard the space station demands precise observation of zero-gravity evidence and technical instrument readings that link back to discoveries made in earlier eras. The fourth case in the arctic facility ties all previous threads together, revealing the nature of the anomaly itself and forcing you to reconcile conflicting timelines into a single coherent narrative. Each case builds on knowledge from the others, creating an interconnected web of clues and revelations that rewards careful note-taking and systematic investigation.",
+      "p4": "What distinguishes ANOMAL from other anomaly detection games is its emphasis on narrative and deduction over simple visual spot-the-difference mechanics. Rather than identifying subtle changes in a repeated scene, you are solving a mystery: reconstructing how and why someone died, and connecting that death to a larger temporal anomaly that spans all four eras. The frozen dioramas are not just visual puzzles; they are stories told through spatial arrangement, and the clues you find are narrative fragments that only make sense when assembled in the correct chronological order. The CRT terminal aesthetic reinforces the investigative fantasy, with phosphor-green text and scan-line effects making every interaction feel like accessing classified temporal records. Glitch effects punctuate moments of temporal instability, adding to the atmosphere of unraveling reality.",
+      "p5": "ANOMAL is a single-player experience developed solely by Alexis Roumier, with Family Sharing support planned for the Steam release. The game is designed for players who enjoy methodical puzzle-solving, environmental storytelling, and the satisfaction of connecting disparate clues into a coherent narrative. The game has not yet been released; the release date is to be announced. This guide site is being built in parallel with the game development, so you will find content based on confirmed information, official previews, and the developer's public communications. We will expand coverage with detailed walkthroughs, complete solutions, and community-contributed strategies as the game launches and the community grows."
+    },
+    "explore": {
+      "heading": "Explore Our Guides",
+      "p1": "This site is an independent, fan-made companion for the ANOMAL game, organized around the same structure as the game itself. The Cases section covers all four investigations, each with objectives, available clues, and solution walkthroughs organized so you can check specific steps without spoilers for the rest. The Eras section details the four historical periods, each with its environment breakdown, the cases set within it, and the clues unique to that era's landscape. The Clues section catalogs every collectible clue, organized by type (physical, temporal, or supernatural), the era where it is found, and which cases it relates to, making cross-referencing straightforward when you are stuck. The Timeline section is the centerpiece of the investigation experience, offering a structured view of events across all four eras in the order they actually occurred, not the order you discover them, which is essential for solving the final case.",
+      "p2": "Beyond the investigation reference sections, the guides portion of the site helps you get the most from your playthrough. The Beginner Guide walks through the core mechanics (how to interact with frozen dioramas, how to collect and examine clues, how the temporal manipulation system works, and how the CRT terminal interface maps to in-game actions), making it the right starting point if you are new to the game or to anomaly-detection puzzles in general. The Mechanics section provides detailed breakdowns of each game system, including the temporal manipulation system, the clue cross-referencing logic, and the timeline reconstruction mechanic that forms the core of the final deduction in each case. The Guide section offers strategic advice for approaching investigations methodically, tips for effective note-taking across eras, and recommendations for the order in which to examine clues when you are stuck. The Achievements section tracks every in-game achievement with unlock conditions and tips for completion.",
+      "p3": "The site also includes practical pages: Game Info covers the confirmed facts about ANOMAL (developer, platforms, release status), the FAQ answers common questions, and the search bar lets you jump directly to any case, era, clue, or guide. Use the navigation above to explore, or start with the Beginner Guide if you are preparing for your first investigation.",
+      "p4": "Since the game has not yet launched, all content on this site is based on confirmed information from official sources and developer communications. We will update every page as new information becomes available, and add detailed walkthroughs, community strategies, and complete timeline solutions once the game releases. Subscribe to updates or check back regularly for the latest coverage."
+    },
+    "trailerTitle": "Game Trailer",
+    "trailerSub": "Official ANOMAL demo trailer",
+    "qCases": "How do I solve the cases?"
+  },
+  "Guides": {
+    "index": {
+      "title": "ANOMAL Guides & Tips",
+      "subtitle": "Walkthroughs and strategy for the ANOMAL game.",
+      "metaTitle": "Guides & Walkthroughs",
+      "metaDescription": "Free ANOMAL guides: beginner walkthrough, case solutions, era breakdowns, clue cross-referencing tips and achievement unlock guides."
+    },
+    "categories": {
+      "gettingStarted": "Getting Started",
+      "investigation": "Investigation",
+      "mechanics": "Mechanics",
+      "completion": "100% & Completion",
+      "walkthroughs": "Walkthroughs"
+    },
+    "moreGuides": {
+      "cards": {
+        "cases": {
+          "title": "Case Solutions",
+          "desc": "Complete walkthroughs for all 4 impossible deaths"
+        },
+        "timeline": {
+          "title": "Timeline Guide",
+          "desc": "How to reconstruct events across eras"
+        },
+        "mechanics": {
+          "title": "Mechanics Deep Dive",
+          "desc": "Understanding observation and cross-referencing"
+        },
+        "beginner": {
+          "title": "Beginner Guide",
+          "desc": "First steps and core mechanics"
+        }
+      },
+      "title": "More Guides"
+    },
+    "detail": {
+      "deepDives": "Deep Dives",
+      "otherGuides": "Other Guides",
+      "publishedRow": "Published {published} · Last updated {lastUpdated}"
+    }
+  },
+  "Achievements": {
+    "index": {
+      "title": "ANOMAL Achievements",
+      "intro": "All achievements in the ANOMAL game with unlock conditions and a local progress tracker.",
+      "metaTitle": "All Achievements & How to Unlock",
+      "metaDescription": "All ANOMAL achievements with unlock conditions, tips and a local progress tracker saved in your browser.",
+      "progress": "{done} / {total} completed",
+      "reset": "Reset progress",
+      "category": {
+        "observation": "Observation",
+        "reconstruction": "Reconstruction",
+        "completion": "Completion"
+      }
+    }
+  },
+  "Game": {
+    "index": {
+      "title": "ANOMAL Game Info - Developer, Platforms & Release Status",
+      "intro": "What ANOMAL is, who made it, how it will be sold and what content is planned.",
+      "metaTitle": "Game Info: Facts & Overview",
+      "metaDescription": "ANOMAL game info: developer Alexis Roumier, Windows via Steam, single-player with Family Sharing, release date TBA.",
+      "gameplayImageAlt": "ANOMAL game screenshot - frozen 3D diorama with CRT terminal interface",
+      "gameplayCaption": "Investigate frozen 3D dioramas across four historical eras using the CRT terminal interface."
+    },
+    "steam": {
+      "index": {
+        "title": "ANOMAL on Steam - Wishlist & Release Info",
+        "intro": "ANOMAL on Steam: wishlist the game, release status, Family Sharing details and developer information.",
+        "metaTitle": "Steam Page: Wishlist & Release",
+        "metaDescription": "ANOMAL on Steam: wishlist info, Family Sharing support, developer Alexis Roumier and release date TBA."
+      }
+    },
+    "systemRequirements": {
+      "index": {
+        "title": "ANOMAL System Requirements - Min & Recommended",
+        "intro": "The minimum and recommended PC specs for ANOMAL.",
+        "metaTitle": "System Requirements: Min vs Recommended",
+        "metaDescription": "ANOMAL system requirements: minimum and recommended PC specs for Windows. Compare CPU, GPU, RAM and storage for smooth gameplay."
+      }
+    },
+    "controls": {
+      "index": {
+        "title": "ANOMAL Controls & Keybindings",
+        "intro": "Every default keybinding in ANOMAL.",
+        "metaTitle": "Controls: All Keybindings",
+        "metaDescription": "ANOMAL controls guide: full default keybinding list for the CRT terminal interface and diorama investigation."
+      }
+    }
+  },
+  "Faq": {
+    "metaTitle": "FAQ: Questions & Answers",
+    "metaDescription": "Answers to the most common ANOMAL questions: getting started, era order, clue cross-referencing, timeline reconstruction and case solutions.",
+    "title": "ANOMAL FAQ",
+    "intro": "Answers to the most common questions about the ANOMAL game."
+  },
+  "About": {
+    "metaTitle": "About This Fan-Made Guide",
+    "metaDescription": "About ANOMAL Guide: an independent fan-made wiki for the ANOMAL game, covering cases, eras, clues and timeline reconstruction.",
+    "title": "About ANOMAL Guide",
+    "p1": "ANOMAL Guide is an independent, fan-made guide site for the ANOMAL game by Alexis Roumier. It is not affiliated with or endorsed by Alexis Roumier.",
+    "p2": "Every guide and data table on this site is built from hands-on play, the Steam store page and official developer communications. When a detail is community-reported rather than verified, we mark it. When the game is patched, we revise the affected pages.",
+    "p3": "The site is English-only and ships with lightweight tools (a local achievement tracker and client-side search) alongside the written guides. No account, no backend, no database.",
+    "contactHeading": "Contact & Corrections",
+    "p4": "Found a mistake or want to contribute? <email>Email us</email> and we will take a look.",
+    "email": "hello@anomalydetected.fun"
+  },
+  "Contact": {
+    "metaTitle": "Contact Us — ANOMAL Game Guide Support",
+    "metaDescription": "Contact the ANOMAL Guide team: send questions, corrections or ANOMAL tips. We read every email and apply sourced corrections quickly.",
+    "title": "Contact",
+    "p1": "Questions, corrections or a tip about ANOMAL? Email us (we read everything, and corrections backed by a source get applied fastest).",
+    "emailHeading": "Email",
+    "email": "hello@anomalydetected.fun",
+    "correctionsHeading": "Content corrections",
+    "corrections": "For content corrections, include the page URL and your source."
+  },
+  "Privacy": {
+    "metaTitle": "Privacy Policy — ANOMAL Game Guide",
+    "metaDescription": "ANOMAL Guide privacy policy: no accounts, no personal data collected. Google Analytics cookies with IP anonymization for site metrics.",
+    "title": "Privacy Policy",
+    "p1": "ANOMAL Guide is a static site with no accounts, no database and no backend. We collect no personal information and we do not ask you to sign up for anything.",
+    "analyticsHeading": "Analytics",
+    "p2": "We use Google Analytics to understand which pages are useful. It sets cookies to tell one anonymous visitor from another, with IP anonymization enabled. You can block these cookies in your browser without losing any site functionality. (This template ships with analytics disabled; enable it by setting gaId in config.)",
+    "localHeading": "Browser Storage",
+    "p3": "The achievement tracker saves your progress locally in your browser (localStorage). That data never leaves your device and is not synced anywhere. Clearing your browser data erases it.",
+    "hostingHeading": "Hosting",
+    "p4": "The site is fully static and can be hosted anywhere static files are served."
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "This page failed to render. Trying again usually fixes it.",
+    "retry": "Try again"
+  },
+  "Codex": {
+    "index": {
+      "title": "ANOMAL Cases - All 4 Investigations",
+      "intro": "Every case in the ANOMAL game: the mystery, the objectives, available clues and the solution path for each temporal investigation.",
+      "metaTitle": "All Cases: Investigations & Solutions",
+      "metaDescription": "Complete ANOMAL case guide: all 4 investigations with objectives, clue lists, era connections and solution walkthroughs.",
+      "tableTitle": "All Cases (4)",
+      "filterEra": "Era",
+      "allEras": "All Eras",
+      "colName": "Case",
+      "colEra": "Era",
+      "colDescription": "Description",
+      "filterEmpty": "No cases match this filter.",
+      "colClues": "Clues"
+    },
+    "detail": {
+      "objectives": "Objectives",
+      "clues": "Available Clues",
+      "solution": "Solution",
+      "spoilerWarning": "Spoiler Warning",
+      "era": "Era",
+      "relatedClues": "Related Clues",
+      "lastUpdated": "Last updated"
+    }
+  },
+  "CodexDetail": {
+    "metaTitle": "Case",
+    "metaDescription": "Complete walkthrough for this ANOMAL case with objectives, clues, and solution.",
+    "objectives": "Objectives",
+    "clues": "Available Clues",
+    "solution": "Solution",
+    "era": "Era"
+  },
+  "Milestones": {
+    "index": {
+      "title": "ANOMAL Timeline - Event Reconstruction",
+      "intro": "Reconstruct the sequence of events across all four eras. The timeline shows each event in chronological order with the era and case it belongs to.",
+      "metaTitle": "Timeline: Complete Event Reconstruction",
+      "metaDescription": "ANOMAL timeline guide: chronological event reconstruction across all 4 eras and 4 cases with related case links and era context.",
+      "timelineTitle": "Timeline Events"
+    }
+  },
+  "Regions": {
+    "index": {
+      "title": "ANOMAL Eras - All 4 Historical Periods",
+      "intro": "The four eras of the ANOMAL game: each historical period with its environment, cases set within it, and the clues unique to its landscape.",
+      "metaTitle": "All Eras: Historical Periods & Environments",
+      "metaDescription": "ANOMAL eras guide: all 4 historical periods (Snowy Mountains, Jungle, Space Station, Arctic Facility) with environments, cases and era-specific clues.",
+      "colCases": "Cases",
+      "colEnvironment": "Environment",
+      "allEras": "The Four Eras",
+      "erasTitle": "All Eras in ANOMAL"
+    },
+    "comparison": {
+      "index": {
+        "title": "Era Comparison",
+        "metaTitle": "Compare All Eras",
+        "metaDescription": "Compare all 4 ANOMAL eras side by side: Frozen Heights, Emerald Canopy, Orbital Station and Buried Temple — environments, cases and clues.",
+        "intro": "The four eras in ANOMAL each present unique environments, challenges, and temporal anomalies."
+      }
+    },
+    "detail": {
+      "overview": "Overview",
+      "timePeriod": "Time Period",
+      "cases": "Cases Set Here",
+      "environment": "Environment",
+      "clues": "Clues Found Here",
+      "next": "Next Era",
+      "lastUpdated": "Last updated",
+      "nextEra": "Next: {name}"
+    }
+  },
+  "Equipment": {
+    "index": {
+      "title": "ANOMAL Clues - All Collectible Evidence",
+      "intro": "Every clue in the ANOMAL game: type, the era where it is found, and the cases it relates to.",
+      "metaTitle": "All Clues: Evidence & Cross-References",
+      "metaDescription": "Complete ANOMAL clue catalog: every clue with type, era location, related cases and cross-reference tips for timeline reconstruction.",
+      "tableTitle": "All Clues",
+      "filterType": "Type",
+      "filterEra": "Era",
+      "allTypes": "All Types",
+      "allEras": "All Eras",
+      "colName": "Clue",
+      "colType": "Type",
+      "colEra": "Era",
+      "filterEmpty": "No clues match this filter.",
+      "colCases": "Related Cases"
+    },
+    "detail": {
+      "type": "Type",
+      "foundIn": "Found In",
+      "relatedCases": "Related Cases",
+      "description": "Description",
+      "lastUpdated": "Last updated"
+    }
+  },
+  "Economy": {
+    "index": {
+      "title": "ANOMAL Game Mechanics - How the Systems Work",
+      "intro": "Every core mechanic in the ANOMAL game explained: temporal observation, clue cross-referencing, timeline reconstruction and the CRT terminal interface.",
+      "metaTitle": "Game Mechanics: Core Systems Explained",
+      "metaDescription": "ANOMAL mechanics guide: temporal observation, clue cross-referencing, timeline reconstruction and the CRT terminal interface explained."
+    }
+  },
+  "Multiplayer": {
+    "index": {
+      "title": "ANOMAL Strategy Guide - Investigation Tips",
+      "intro": "Strategic advice for investigating cases in ANOMAL: how to approach each era, the most effective clue collection order, and tips for timeline reconstruction.",
+      "metaTitle": "Strategy Guide: Investigation Tips & Walkthrough",
+      "metaDescription": "ANOMAL strategy guide: investigation approach, clue collection order, note-taking methods and timeline reconstruction tips for all 4 cases."
+    },
+    "detail": {
+      "relatedGuides": "Related Guides",
+      "lastUpdated": "Last updated"
+    }
+  },
+  "RegionDetail": {
+    "title": "Era Details",
+    "environment": "Environment",
+    "anomalies": "Temporal Anomalies",
+    "relatedCases": "Related Cases",
+    "cases": "Related Cases",
+    "next": "Next Era",
+    "nextRegion": "Next Region",
+    "overview": "Overview"
+  }
+}

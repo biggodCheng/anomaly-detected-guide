@@ -1,0 +1,427 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* ══════════════════════════════════════════════════════════════════
+   每游戏主题文件 —— 换游戏时改这个文件的品牌色块即可换视觉。
+   主题体系说明(两套 token 并存,改色时两处都要看):
+   - @theme / :root 的 --color-* CSS 变量:业务组件用 var(--color-primary) 消费
+   - shadcn 语义 token(bg-primary/text-foreground 等):components/ui/* 原语消费
+   换站清单:下方 @theme 品牌变体 + :root 的主品牌色(浅/深两套)。
+   三主色已登记进 config/site.config.json 的 theme 字段 —— 改色须两处同步(site.test 守护)。
+   ══════════════════════════════════════════════════════════════════ */
+
+@custom-variant dark (&:is(.dark *));
+
+/* 页内锚点跳转目标从粘性 header（h-14 + 边框）下方开始，
+   而不是顶到视口边缘被 header 遮住（#npc-schedules、#slug 等）。 */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-padding-top: 5rem;
+}
+
+@theme {
+  /* CRT 终端主题：磷光绿 + 深黑背景 + 故障橙 */
+  --color-primary-bg: #0d2e0d;
+  --color-secondary-bg: #1a1a1a;
+  --color-accent-bg: #3d1a00;
+
+  /* 状态色 */
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+
+  /* 阴影 */
+  --shadow-card: var(--shadow);
+  --shadow-card-hover: var(--shadow-md);
+
+  /* 形态 */
+  --radius-card: 12px;
+  --radius-control: 8px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@theme inline {
+  --font-heading: var(--font-cinzel), var(--font-sans);
+  --font-display: var(--font-cinzel), var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* CRT 终端主题：磷光绿 + 深黑背景 + 故障橙 */
+  --background: #0a0a0a;
+  --foreground: #39ff14;
+  --card: #0d0d0d;
+  --card-foreground: #39ff14;
+  --popover: #0d0d0d;
+  --popover-foreground: #39ff14;
+  --primary: #39ff14;
+  --primary-foreground: #0a0a0a;
+  --secondary: #0a0a0a;
+  --secondary-foreground: #39ff14;
+  --muted: #0a0a0a;
+  --muted-foreground: #666666;
+  --accent: #ff6600;
+  --accent-foreground: #ffffff;
+  /* 字体（由 next/font 注入 --font-inter 等；@theme inline 桥接到 font-sans 工具类） */
+  --font-sans: var(--font-inter), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+  --destructive: #dc2626;
+  --success: #16a34a;
+  --warning: #d97706;
+  --info: #2563eb;
+  --border: #0a0a0a;
+  --input: #0a0a0a;
+  --ring: #39ff14;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.06), 0 4px 6px -4px rgb(0 0 0 / 0.06);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  /* CRT 终端主题：暗色即默认，保持一致 */
+  --background: #0a0a0a;
+  --foreground: #39ff14;
+  --card: #0d0d0d;
+  --card-foreground: #39ff14;
+  --popover: #0d0d0d;
+  --popover-foreground: #39ff14;
+  --primary: #39ff14;
+  --primary-foreground: #0a0a0a;
+  --secondary: #0a0a0a;
+  --secondary-foreground: #39ff14;
+  --muted: #0a0a0a;
+  --muted-foreground: #666666;
+  --accent: #ff6600;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --info: #3b82f6;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: #fb923c;
+  --chart-1: #fb923c;
+  --chart-2: #fbbf24;
+  --chart-3: #2dd4bf;
+  --chart-4: oklch(0.556 0 0);
+  --chart-5: oklch(0.371 0 0);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --sidebar: #0f1319;
+  --sidebar-foreground: #f1f5f9;
+  --sidebar-primary: #fb923c;
+  --sidebar-primary-foreground: #0c0f14;
+  --sidebar-accent: #1a2030;
+  --sidebar-accent-foreground: #f1f5f9;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #fb923c;
+}
+
+/* ── Global Enhancements ── */
+::selection {
+  background: color-mix(in oklch, var(--primary) 20%, transparent);
+  color: var(--foreground);
+}
+
+/* Subtle focus-visible ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+/* 尊重系统"减少动态效果"设置:骨架/弹窗/悬停过渡全部静止(WCAG 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Fantasy Atmosphere — 游戏攻略站视觉升级
+   方向:dark fantasy + 暖光氛围,避免 SaaS 通用感。
+   ───────────────────────────────────────────────────────────────────── */
+
+/* 全局 body:柔和径向暖光晕 + 细微颗粒感,营造"羊皮卷/篝火边"氛围 */
+body {
+  background-image:
+    radial-gradient(1200px 600px at 15% -10%, color-mix(in oklch, var(--primary) 8%, transparent), transparent 60%),
+    radial-gradient(900px 500px at 85% 5%, color-mix(in oklch, var(--accent) 6%, transparent), transparent 55%),
+    radial-gradient(600px 400px at 50% 110%, color-mix(in oklch, var(--secondary) 5%, transparent), transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 暗色模式:更浓的余烬氛围 */
+.dark body,
+.dark body {
+  background-image:
+    radial-gradient(1200px 600px at 15% -10%, color-mix(in oklch, var(--primary) 14%, transparent), transparent 60%),
+    radial-gradient(900px 500px at 85% 5%, color-mix(in oklch, var(--accent) 10%, transparent), transparent 55%),
+    radial-gradient(600px 400px at 50% 110%, color-mix(in oklch, var(--secondary) 8%, transparent), transparent 50%);
+}
+.dark body::before {
+  opacity: 0.06;
+}
+
+/* ── Display Typography (h1/h2/hero/section titles) ── */
+.font-display,
+h1, h2 {
+  font-family: var(--font-cinzel), var(--font-sans);
+  letter-spacing: 0.01em;
+}
+
+/* ── Section headers —— 带装饰线的主题标题 ── */
+.section-title {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    color-mix(in oklch, var(--primary) 40%, transparent) 40%,
+    transparent 100%
+  );
+  border-radius: 2px;
+}
+
+/* ── Card refinement —— 更精致的卡片(带顶部微光 + 悬停抬升) ── */
+.card-enhanced {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.card-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklch, var(--primary) 4%, transparent) 0%,
+    transparent 35%
+  );
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+.card-enhanced:hover::before {
+  opacity: 1;
+}
+.card-enhanced > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Ember hover glow —— 悬停时卡片边框的余烬发光 ── */
+.ember-glow {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.3s ease,
+    transform 0.25s ease;
+}
+.ember-glow:hover {
+  border-color: color-mix(in oklch, var(--primary) 45%, var(--border));
+  box-shadow:
+    0 0 0 1px color-mix(in oklch, var(--primary) 15%, transparent),
+    0 8px 24px -8px color-mix(in oklch, var(--primary) 25%, transparent),
+    0 4px 12px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-2px);
+}
+
+/* ── Hero badge shimmer —— Hero 徽章微光 ── */
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.shimmer-badge {
+  background: linear-gradient(
+    110deg,
+    color-mix(in oklch, var(--primary) 15%, transparent) 0%,
+    color-mix(in oklch, var(--primary) 25%, transparent) 45%,
+    color-mix(in oklch, var(--secondary) 20%, transparent) 55%,
+    color-mix(in oklch, var(--primary) 15%, transparent) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+/* ── Fade-in-up 入场动画 ── */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+.animate-fade-up-delay-1 { animation-delay: 0.1s; }
+.animate-fade-up-delay-2 { animation-delay: 0.2s; }
+.animate-fade-up-delay-3 { animation-delay: 0.3s; }
+
+/* ── Sidebar active indicator —— 更醒目的当前页标记 ── */
+.nav-active-indicator {
+  position: relative;
+}
+.nav-active-indicator::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  border-radius: 0 3px 3px 0;
+  background: var(--primary);
+}
+
+/* ── Header enhancement —— 底部微光线 ── */
+header {
+  border-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in oklch, var(--primary) 30%, var(--border)) 50%,
+    transparent 100%
+  ) 1;
+}
+
+/* ── Footer divider —— 顶部分隔线 ── */
+footer {
+  position: relative;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklch, var(--primary) 40%, transparent),
+    transparent
+  );
+}
+

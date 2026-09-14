@@ -1,0 +1,12 @@
+# Cloudflare Pages configuration for anomalydetected.fun
+#
+# Deployment: GitHub repo anomaly-detected-guide connected to Cloudflare Pages
+# (Git integration — every push to master auto-builds and deploys).
+#
+# Static export site (no functions, no env vars).
+# Custom domain anomalydetected.fun is bound in the Cloudflare dashboard
+# (DNS CNAME → <project>.pages.dev).
+
+name = "anomaly-detected-guide"
+compatibility_date = "2026-09-14"
+pages_build_output_dir = "out"
