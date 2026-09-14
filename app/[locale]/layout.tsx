@@ -129,8 +129,8 @@ export default async function LocaleLayout({
           as="image"
           href="/images/hero-anomaly-header-1730.avif"
           type="image/avif"
-          imagesizes="(min-width: 1152px) 1120px, calc(100vw - 32px)"
-          fetchpriority="high"
+          imageSizes="(min-width: 1152px) 1120px, calc(100vw - 32px)"
+          fetchPriority="high"
         />
         <GoogleAnalytics />
       </head>

@@ -246,9 +246,14 @@ body {
     radial-gradient(1200px 600px at 15% -10%, color-mix(in oklch, var(--primary) 8%, transparent), transparent 60%),
     radial-gradient(900px 500px at 85% 5%, color-mix(in oklch, var(--accent) 6%, transparent), transparent 55%),
     radial-gradient(600px 400px at 50% 110%, color-mix(in oklch, var(--secondary) 5%, transparent), transparent 50%);
-  background-attachment: fixed;
+  /* 移动端 fixed 背景导致合成层重绘(scroll jank)。
+     桌面端保留 fixed(视差感),移动端降级 scroll(60fps)。 */
+  background-attachment: scroll;
   min-height: 100vh;
   position: relative;
+}
+@media (min-width: 768px) {
+  body { background-attachment: fixed; }
 }
 body::before {
   content: '';

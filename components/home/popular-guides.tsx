@@ -17,7 +17,7 @@ export async function PopularGuides({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'Home' })
   const allGuides = getAllGuides(locale as Locale)
   // Show featured SEO guides first, then remaining guides
-  const featured = FEATURED_SLUGS.map((slug) => allGuides.find((g) => g.slug === slug)).filter(Boolean)
+  const featured = FEATURED_SLUGS.map((slug) => allGuides.find((g) => g.slug === slug)).filter((g): g is NonNullable<typeof g> => g != null)
   const remaining = allGuides.filter((g) => !FEATURED_SLUGS.includes(g.slug))
   const guides = [...featured, ...remaining]
   return (

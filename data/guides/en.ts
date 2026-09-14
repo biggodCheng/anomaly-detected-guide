@@ -418,6 +418,16 @@ export const enGuides: Guide[] = [
           'What is the difference between anomaly detection and hidden object games? — Anomaly detection focuses on subtle changes in a static scene (spot the difference, but with horror atmosphere). Hidden object games focus on finding listed items in a cluttered scene.',
         ],
       },
+      {
+        heading: 'Related Guides',
+        body: 'Explore more anomaly and time travel content:',
+        items: [
+          'Time Travel Puzzle Games — Best time travel puzzle games to download in 2026.',
+          'Games Like Observation Duty — 12+ anomaly-spotting games sorted by type and difficulty.',
+          'Anomaly Horror Games — Best anomaly horror games ranked by terror level.',
+          'Release Date Tracker — Latest status and wishlist guide for ANOMAL.',
+        ],
+      },
     ],
   },
   {
@@ -520,6 +530,16 @@ export const enGuides: Guide[] = [
           'What is the scariest anomaly game? — I\'m on Observation Duty 5 and The Exit 8 are consistently rated the most terrifying.',
         ],
       },
+      {
+        heading: 'Related Guides',
+        body: 'More anomaly and time travel recommendations:',
+        items: [
+          'Time Travel Puzzle Games — Best time travel puzzle games to download in 2026.',
+          'Anomaly Detection Games Online — Free anomaly detection games you can play in your browser.',
+          'Anomaly Horror Games — Best anomaly horror games ranked by terror level.',
+          'Release Date Tracker — Latest status and wishlist guide for ANOMAL.',
+        ],
+      },
     ],
   },
   {
@@ -612,6 +632,16 @@ export const enGuides: Guide[] = [
           'Who is developing ANOMAL? — Alexis Roumier, a solo indie developer from France.',
         ],
       },
+      {
+        heading: 'Related Guides',
+        body: 'More recommendations while you wait for ANOMAL:',
+        items: [
+          'Time Travel Puzzle Games — Best time travel puzzle games to download in 2026.',
+          'Anomaly Detection Games Online — Free anomaly detection games you can play in your browser.',
+          'Games Like Observation Duty — 12+ anomaly-spotting games sorted by type and difficulty.',
+          'Anomaly Horror Games — Best anomaly horror games ranked by terror level.',
+        ],
+      },
     ],
   },
   {
@@ -696,6 +726,16 @@ export const enGuides: Guide[] = [
           'Are there anomaly games without horror? — Yes. Para Eyes and many browser games offer anomaly mechanics without horror themes.',
           'What is the best anomaly game for beginners? — The Exit 8 is simple, accessible, and defines the genre. Start there.',
           'Is ANOMAL suitable for children? — ANOMAL has no gore or jump scares, but the themes (impossible deaths, temporal dread) may be unsettling for young children. Rating TBA.',
+        ],
+      },
+      {
+        heading: 'Related Guides',
+        body: 'More anomaly game recommendations:',
+        items: [
+          'Time Travel Puzzle Games — Best time travel puzzle games to download in 2026.',
+          'Anomaly Detection Games Online — Free anomaly detection games you can play in your browser.',
+          'Games Like Observation Duty — 12+ anomaly-spotting games sorted by type and difficulty.',
+          'Release Date Tracker — Latest status and wishlist guide for ANOMAL.',
         ],
       },
     ],
