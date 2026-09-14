@@ -12,11 +12,13 @@ const SLUGS = [
   'time-travel-puzzle-games',
   'anomaly-detection-games-online',
   'games-like-observation-duty',
+  'anomal-release-date',
+  'anomaly-horror-games',
 ]
 
 describe('guides data integrity', () => {
-  it('has the 7 pillar guides with unique slugs', () => {
-    expect(enGuides).toHaveLength(7)
+  it('has the 9 pillar guides with unique slugs', () => {
+    expect(enGuides).toHaveLength(9)
     expect(enGuides.map((g) => g.slug).sort()).toEqual([...SLUGS].sort())
   })
   it('every guide has valid category, dates and 4+ sections', () => {

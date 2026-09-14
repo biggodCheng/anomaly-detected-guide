@@ -512,4 +512,182 @@ export const enGuides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'anomal-release-date',
+    title: 'Release Date Tracker & Wishlist Guide',
+    description:
+      'ANOMAL release date status, wishlist guide, and developer updates from Alexis Roumier. Track the upcoming time travel anomaly detective game on Steam.',
+    icon: '📅',
+    category: 'recommendations',
+    published: '2026-09-14',
+    lastUpdated: '2026-09-14',
+    sections: [
+      {
+        heading: 'Quick Answer: Is ANOMAL Released Yet?',
+        body: 'No. ANOMAL is not yet released. The game is in development by solo indie developer Alexis Roumier and will launch on Steam for PC (Windows). The release date has not been announced. You can wishlist the game on Steam to receive a notification when the release date is confirmed or when the game launches.',
+      },
+      {
+        heading: 'Current Release Status',
+        body: 'As of September 2026, ANOMAL has a Steam store page but no confirmed release date. The game was first revealed in a developer post on January 20, 2025, with the CRT terminal aesthetic announced as the core visual identity. Since then, development has been ongoing with periodic updates shared through the developer\'s public communications.',
+        items: [
+          'Platform: Steam (PC, Windows only at launch)',
+          'Developer: Alexis Roumier (solo indie)',
+          'Status: In development, release date TBA',
+          'Steam page: Available — wishlist for launch notification',
+          'Family Sharing: Planned support for Steam release',
+        ],
+      },
+      {
+        heading: 'How to Wishlist ANOMAL on Steam',
+        body: 'Wishlisting is the best way to stay updated. When you wishlist a game on Steam, you receive an email notification when the game launches or when the price changes during a sale.',
+        items: [
+          'Go to the ANOMAL Steam page: store.steampowered.com/app/4899900/ANOMAL/',
+          'Click the "Follow" or "Wishlist" button on the store page',
+          'You will receive an email when the release date is announced',
+          'You will receive another email when the game launches',
+          'If the game goes on sale during a Steam sale, you will be notified',
+        ],
+        tip: 'Wishlisting also helps the game\'s visibility on Steam. The more wishlists a game has, the more likely it is to appear in Steam\'s discovery queue and recommendation algorithms.',
+      },
+      {
+        heading: 'What We Know About ANOMAL',
+        body: 'Based on official developer communications and the Steam store page, here is what has been confirmed about the game:',
+        table: {
+          headers: ['Feature', 'Details'],
+          rows: [
+            ['Genre', 'Time travel puzzle / anomaly detection / point-and-click'],
+            ['Setting', 'Four frozen 3D dioramas across different eras'],
+            ['Eras', 'Frozen Heights (1980s Soviet), Emerald Canopy (Jungle), Orbital Station (Space), Buried Temple (Ancient)'],
+            ['Core Mechanic', 'Cross-reference clues across eras to reconstruct a fractured timeline'],
+            ['Aesthetic', 'Retro-futuristic CRT terminal, phosphor green scan lines, 1980s Soviet research equipment'],
+            ['Playtime', 'Estimated 4-6 hours for main investigation'],
+            ['Combat', 'None — purely analytical investigation'],
+            ['Timer', 'None — take your time to observe every detail'],
+            ['Fail States', 'None — experiment freely with the timeline reconstruction board'],
+            ['Multiplayer', 'Single-player only'],
+          ],
+        },
+      },
+      {
+        heading: 'Developer Updates and Communications',
+        body: 'Alexis Roumier has shared development updates through public channels. The most significant confirmed details:',
+        items: [
+          'January 20, 2025: First developer post revealing the game concept and CRT terminal aesthetic',
+          'The four eras were confirmed: Frozen Heights, Emerald Canopy, Orbital Station, Buried Temple',
+          'The core mechanic is cross-referencing clues across eras to reconstruct a timeline',
+          'Each era has a self-contained case, but all four connect through a single anomaly',
+          'The game is being developed solo — no team, no publisher',
+        ],
+        tip: 'Follow the developer\'s public communications for the most reliable updates. Be cautious of unofficial sources claiming release dates or features not confirmed by the developer.',
+      },
+      {
+        heading: 'What to Play While You Wait',
+        body: 'If you are excited about ANOMAL and want similar experiences while waiting for the release, here are some recommendations:',
+        items: [
+          'Time travel puzzle games: The Silent Age, RECUR, Braid — see our full list at /guides/time-travel-puzzle-games',
+          'Anomaly detection games: The Exit 8, I\'m on Observation Duty — see our list at /guides/anomaly-detection-games-online',
+          'Investigation puzzles: Outer Wilds, The Sexy Brutale — narrative mysteries with temporal mechanics',
+          'Point-and-click adventures: The Silent Age, Zero Escape series — classic puzzle adventure format',
+        ],
+      },
+      {
+        heading: 'Frequently Asked Questions',
+        body: '',
+        items: [
+          'When is ANOMAL coming out? — Release date has not been announced. Wishlist on Steam for notification.',
+          'Is ANOMAL free? — Price has not been announced. It will be a paid game on Steam.',
+          'Will ANOMAL be on consoles? — Currently confirmed for PC (Steam) only. No console announcements.',
+          'Is ANOMAL multiplayer? — No, ANOMAL is single-player only.',
+          'How long is ANOMAL? — Estimated 4-6 hours for the main investigation.',
+          'Who is developing ANOMAL? — Alexis Roumier, a solo indie developer from France.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'anomaly-horror-games',
+    title: 'Best Anomaly Horror Games in 2026',
+    description:
+      'The best anomaly horror games ranked by terror level: The Exit 8, I\'m on Observation Duty, ANOMAL and more. Includes multiplayer options and family-friendly picks.',
+    icon: '👻',
+    category: 'recommendations',
+    published: '2026-09-14',
+    lastUpdated: '2026-09-14',
+    sections: [
+      {
+        heading: 'Quick Answer: What Are the Best Anomaly Horror Games?',
+        body: 'Anomaly horror games combine the tension of surveillance with the dread of the unknown. You watch a frozen scene — a corridor, a room, a camera feed — and must spot the one thing that does not belong. But in horror variants, the anomalies are designed to unsettle: impossible geometry, wrong faces, things that should not be there. The best anomaly horror games in 2026 are The Exit 8, I\'m on Observation Duty 5, and the upcoming ANOMAL. Below is a ranked list with terror levels, multiplayer options, and what makes each one terrifying.',
+      },
+      {
+        heading: 'Top Anomaly Horror Games Ranked',
+        body: 'Ranked by community consensus on terror level. All prices in USD as of September 2026.',
+        table: {
+          headers: ['Game', 'Price', 'Terror Level', 'Multiplayer', 'Key Horror Element'],
+          rows: [
+            ['I\'m on Observation Duty 5', '$7.99', 'Extreme', 'Co-op', 'Jump scares + psychological dread'],
+            ['The Exit 8', '$4.99', 'High', 'No', 'Uncanny corridor + loop tension'],
+            ['ANOMAL (Upcoming)', 'TBA', 'High (psychological)', 'No', 'Cross-era anomalies + temporal dread'],
+            ['Alternate Watch', '$3.99', 'High', 'No', 'Single room + fixed camera paranoia'],
+            ['Silent Surveillance', '$3.99', 'High', 'No', 'Building-wide surveillance + isolation'],
+            ['Shinkansen 0', '$3.99', 'Medium-High', 'No', 'Train car loop + claustrophobia'],
+            ['Para Eyes', '$2.99', 'Medium', 'No', 'Photo comparison + subtle wrongness'],
+            ['False Dream', '$1.99', 'Medium', 'No', 'Dream logic + reality breakdown'],
+          ],
+        },
+      },
+      {
+        heading: 'The Most Terrifying Moments in Anomaly Games',
+        body: 'What makes anomaly horror effective? The best moments come from the violation of expectation — when something you memorized as "normal" is suddenly wrong.',
+        items: [
+          'The Exit 8 — The moment you realize the corridor has changed but you cannot identify what is different. The dread of walking forward when you should turn back.',
+          'I\'m on Observation Duty 5 — Jump scares timed to your attention patterns. The game learns when you are most focused and strikes when you relax.',
+          'ANOMAL — The cross-era revelation: when clues from one era reveal that another era\'s "normal" was always wrong. Psychological dread over jump scares.',
+          'Alternate Watch — The single room that feels increasingly wrong the longer you stare. Fixed camera means you cannot look away.',
+        ],
+      },
+      {
+        heading: 'Multiplayer Anomaly Horror Games',
+        body: 'Most anomaly games are single-player, but a few offer co-op or shared experiences.',
+        items: [
+          'I\'m on Observation Duty (some versions) — Co-op modes where multiple players watch different cameras and must coordinate reports.',
+          'ANOMAL — Single-player only. The investigation is designed as a solitary experience.',
+          'The Exit 8 — Single-player. The tension comes from isolation.',
+          'Browser co-op anomaly games — itch.io hosts several experimental co-op anomaly games. Search "co-op anomaly" for current picks.',
+        ],
+      },
+      {
+        heading: 'ANOMAL: Psychological Horror Over Jump Scares',
+        body: 'ANOMAL takes a different approach to horror. Instead of jump scares and gore, the game builds dread through temporal impossibility. The horror comes from realizing that the timeline itself is broken — that what you observed as "normal" was always wrong. Each of the four eras contains anomalies that defy physics: a mountaineer burnt in untouched snow, a conquistador dead with no wound, an astronaut erased from a sealed station, a figure petrified on an ancient throne. The horror is intellectual — the dread of understanding that the rules you thought governed the world do not apply.',
+        items: [
+          'No jump scares — ANOMAL does not rely on sudden frights',
+          'No gore — the horror is in the implication, not the visual',
+          'Psychological dread — the terror of temporal impossibility',
+          'Cross-era revelation — the moment you realize all four cases connect through a single anomaly',
+          'Release date: TBA. Wishlist on Steam for notification.',
+        ],
+      },
+      {
+        heading: 'Family-Friendly Anomaly Games',
+        body: 'Not all anomaly games are horror. These picks are suitable for younger players or those who prefer puzzle challenge over terror.',
+        items: [
+          'Para Eyes — Photo-based anomaly spotting. No horror atmosphere, pure puzzle. $2.99.',
+          'The Exit 8 — Tense but not gory. Suitable for teens. $4.99.',
+          'ANOMAL — Psychological tension over jump scares. No gore. Rating TBA.',
+          'Browser anomaly games — Many free browser games offer anomaly mechanics without horror themes.',
+        ],
+      },
+      {
+        heading: 'Frequently Asked Questions',
+        body: '',
+        items: [
+          'What is the scariest anomaly game? — I\'m on Observation Duty 5 is consistently rated the most terrifying by the community.',
+          'Are there co-op anomaly horror games? — I\'m on Observation Duty has some co-op modes. Most anomaly games are single-player.',
+          'Is ANOMAL a horror game? — ANOMAL uses psychological tension rather than jump scares or gore. It is unsettling but not traditionally "horror."',
+          'Are there anomaly games without horror? — Yes. Para Eyes and many browser games offer anomaly mechanics without horror themes.',
+          'What is the best anomaly game for beginners? — The Exit 8 is simple, accessible, and defines the genre. Start there.',
+          'Is ANOMAL suitable for children? — ANOMAL has no gore or jump scares, but the themes (impossible deaths, temporal dread) may be unsettling for young children. Rating TBA.',
+        ],
+      },
+    ],
+  },
 ]

@@ -22,4 +22,6 @@ export const MORE_GUIDES = [
   { key: 'timeTravelGames', path: 'guides/time-travel-puzzle-games' },
   { key: 'anomalyGamesOnline', path: 'guides/anomaly-detection-games-online' },
   { key: 'gamesLikeObservationDuty', path: 'guides/games-like-observation-duty' },
+  { key: 'releaseDate', path: 'guides/anomal-release-date' },
+  { key: 'anomalyHorror', path: 'guides/anomaly-horror-games' },
 ] as const

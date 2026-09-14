@@ -34,6 +34,20 @@ export const mechanicsHub: TopicData = {
     body: 'No case solves itself in isolation. Each case has three clues, and at least one clue points at a different era. The Frozen Flame\'s compass metallurgy matches the Orbital Station\'s chronometer; the Conquistador\'s helmet water shares an isotope ratio with the Buried Temple\'s offering residue. Build a table as you go — the anomaly reveals itself only when all four cases are solved and the cross-era matches line up.',
     tip: 'Start with the impossible dates. A logbook entry written after the body is discovered, murals depicting modern events in an ancient temple — these are ordering clues, not errors.',
   },
+  {
+    heading: 'How to Spot Anomalies Fast',
+    body: 'Anomaly detection — whether in ANOMAL or other games in the genre — rewards patience, but there are proven techniques to improve your speed and accuracy.',
+    items: [
+      'Scan in a fixed pattern: left-to-right, top-to-bottom. Do not let your eye wander randomly — systematic scanning catches more than intuition.',
+      'Memorize the baseline: on your first loop, deliberately study every object. On subsequent loops, your brain will flag deviations automatically.',
+      'Focus on "impossible" details: objects that should not be in that era, physics violations, things that contradict the scene\'s logic.',
+      'Use peripheral vision: anomalies often hide at the edges of the scene. Your central vision is optimized for detail; peripheral vision is better at detecting change.',
+      'Do not rush the first loop: the first pass is the most important. Rushing it means you miss the baseline and have nothing to compare against.',
+      'Take mental notes: "red book on shelf, blue vase on table, clock showing 3:15." When something changes, you will catch it faster.',
+      'Trust your gut: if something feels wrong but you cannot identify it, mark it and move on. Your subconscious often catches anomalies before your conscious mind does.',
+    ],
+    tip: 'These techniques apply to all anomaly detection games — The Exit 8, I\'m on Observation Duty, and similar titles. The skill transfers directly between games.',
+  },
   ],
 }
 

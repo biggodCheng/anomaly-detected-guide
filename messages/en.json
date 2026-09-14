@@ -219,6 +219,14 @@
         "gamesLikeObservationDuty": {
           "title": "Games Like Observation Duty",
           "desc": "12+ anomaly-spotting games sorted by type and difficulty"
+        },
+        "releaseDate": {
+          "title": "Release Date Tracker",
+          "desc": "Latest status and wishlist guide"
+        },
+        "anomalyHorror": {
+          "title": "Anomaly Horror Games",
+          "desc": "Best anomaly horror games ranked by terror level"
         }
       },
       "title": "More Guides"

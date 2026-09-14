@@ -26,6 +26,11 @@ export const gameHub: TopicData = {
       heading: 'The Core Loop in One Paragraph',
       body: 'Observe the frozen 3D diorama from every angle, collect physical, temporal, and supernatural clues, cross-reference evidence across the four different eras, and reconstruct the timeline to solve each impossible death. All four cases connect through a single anomaly — the solution always emerges from contradictions between what you see and what should be possible.',
     },
+    {
+      heading: 'Release Date Status',
+      body: 'ANOMAL has not been released yet. The release date is to be announced. The Steam store page is live, and you can wishlist the game to receive a notification when the release date is confirmed or when the game launches. For the latest updates and a detailed wishlist guide, see our dedicated release tracker.',
+      tip: 'Wishlist the Steam page now — you will get an email the moment the release date and pricing are announced.',
+    },
   ],
 }
 
@@ -42,6 +47,18 @@ export const gameSteam: TopicData = {
         'Languages: English and French.',
       ],
       tip: 'Wishlist the Steam page now so you get an email the moment the release date and pricing are announced.',
+    },
+    {
+      heading: 'Anomaly Games on Steam',
+      body: 'ANOMAL is part of a growing genre of anomaly detection games on Steam. If you enjoy the core mechanic — spotting the one thing that does not belong in a frozen scene — here are other anomaly games currently available on Steam:',
+      items: [
+        'The Exit 8 — The game that defined the corridor-loop variant. Walk forward if nothing changed, turn back if you spot an anomaly. $4.99.',
+        'I\'m on Observation Duty (1-6) — The original surveillance-camera anomaly series. Watch multiple rooms and report what changes. $2.99-$7.99 each.',
+        'Alternate Watch — Single-room anomaly detection with a fixed camera. $3.99.',
+        'Para Eyes — Photo-based anomaly spotting. Examine photos and find the wrong detail. $2.99.',
+        'Shinkansen 0 — Anomaly detection on a bullet train. Each car is a loop. $3.99.',
+      ],
+      tip: 'For a full list of anomaly games on Steam with current prices and community ratings, see our recommendations guide.',
     },
   ],
 }
