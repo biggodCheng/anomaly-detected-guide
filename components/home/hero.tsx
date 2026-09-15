@@ -4,7 +4,9 @@ import { heroStats, heroCtas } from '@/data/homepage'
 import { localePath, heroImageVariant, heroHeaderAvif } from '@/lib/site'
 import { siteConfig } from '@/config/site.config'
 
-const HERO_SIZES = '(min-width: 1152px) 1120px, calc(100vw - 32px)'
+// sizes 单一事实源:img 与 layout 的手工 preload imageSizes 必须逐字符一致,
+// 否则 preload 与实际请求变体不匹配会双下载/落空。
+export const HERO_SIZES = '(min-width: 1152px) 1120px, calc(100vw - 32px)'
 
 const heroSrc = siteConfig.heroImage
 const heroSrcset = `${heroImageVariant(768)} 768w, ${heroSrc} 1730w`

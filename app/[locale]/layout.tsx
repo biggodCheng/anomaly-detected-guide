@@ -10,7 +10,8 @@ import { SearchProvider } from '@/components/search/search-provider'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { GoogleAnalytics } from '@/components/analytics/google-analytics'
 import { siteNameFor } from '@/lib/seo'
-import { absoluteUrl, siteConfig, websiteSchema } from '@/lib/site'
+import { absoluteUrl, heroHeaderAvif, siteConfig, websiteSchema } from '@/lib/site'
+import { HERO_SIZES } from '@/components/home/hero'
 import '@/app/globals.css'
 
 // 自托管 Inter(latin 可变字重 100-900)—— 与 next/font/google 构建期下载的是
@@ -25,16 +26,12 @@ const inter = localFont({
 })
 
 // Cinzel —— 罗马碑刻风 display 字体,专用于 h1/h2/hero 等装饰性大标题(奇幻史诗感)。
-// 6 个字重 latin 子集自托管,构建零网络依赖(与 inter 同一策略)。
+// 🔴 只声明 700:设计系统 font-display 类一律配 font-bold,next/font 会把声明的
+// 全部字重 preload 进关键路径(~90KB),挤占 CSS/hero 的首屏带宽、拖 FCP——
+// WARDogs 站 A/B 实测收缩到单字重后 mobile LCP 6.8s→4.2s(2026-09-15)。要用
+// 其他字重时按需补声明并重测 LCP。
 const cinzel = localFont({
-  src: [
-    { path: '../fonts/cinzel-latin-400.woff2', weight: '400', style: 'normal' },
-    { path: '../fonts/cinzel-latin-500.woff2', weight: '500', style: 'normal' },
-    { path: '../fonts/cinzel-latin-600.woff2', weight: '600', style: 'normal' },
-    { path: '../fonts/cinzel-latin-700.woff2', weight: '700', style: 'normal' },
-    { path: '../fonts/cinzel-latin-800.woff2', weight: '800', style: 'normal' },
-    { path: '../fonts/cinzel-latin-900.woff2', weight: '900', style: 'normal' },
-  ],
+  src: [{ path: '../fonts/cinzel-latin-700.woff2', weight: '700', style: 'normal' }],
   variable: '--font-cinzel',
   display: 'swap',
 })
@@ -116,20 +113,22 @@ export default async function LocaleLayout({
         {/* Preconnect:提前 DNS+TCP+TLS 握手,后续请求省 ~150-300ms(RTT 150ms 低速 4G)。
             只连首屏确实会用到的 origin;每多一个 preconnect 占一个 socket 池位(Chrome 6/HTTP1)。
             字体已自托管(next/font local),无需 preconnect Google Fonts。
-            YouTube 非首屏关键资源,不占 preconnect 位。 */}
-        <link rel="preconnect" href="https://i.ytimg.com" crossOrigin="" />
+            YouTube 缩略图已本地化(poster 传入 youtube-embed),i.ytimg 不再出现在
+            首屏 —— 播放器连接由 facade 在用户 hover 时按需预热,不占 preconnect 位。 */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         {/* Preload LCP 候选:hero 图。用 imagesrcset+imagesizes 让浏览器按视口选正确变体
             (移动端 768w,桌面 1730w);避免只 preload 1730w 导致移动端 preload 失效。
+            路径/sizes 全部派生(heroHeaderAvif + hero.tsx 的 HERO_SIZES 单一事实源),
+            与 hero.tsx <picture> 的 avif source 逐字符一致 —— preload 才能命中。
             fetchpriority=high 让浏览器优先取它而非 CSS/字体。
             静态导出无 next/image loader,手工 preload 是 LCP <2.5s 的关键。 */}
         <link
           rel="preload"
           as="image"
-          href="/images/hero-anomaly-header-1730.avif"
-          imageSrcSet="/images/hero-anomaly-header-768.avif 768w, /images/hero-anomaly-header-1730.avif 1730w"
-          imageSizes="(min-width: 1152px) 1120px, calc(100vw - 32px)"
+          href={heroHeaderAvif(1730)}
+          imageSrcSet={`${heroHeaderAvif(768)} 768w, ${heroHeaderAvif(1730)} 1730w`}
+          imageSizes={HERO_SIZES}
           type="image/avif"
           fetchPriority="high"
         />
