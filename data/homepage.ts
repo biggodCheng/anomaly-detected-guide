@@ -37,6 +37,15 @@ export const popularQuestions = [
   { href: '/mechanics', questionKey: 'qMechanics' },
 ] as const
 
+// 首页 Popular Guides 的精选排序(guide slugs,内容层;不存在的 slug 静默跳过)。
+export const featuredGuideSlugs = [
+  'time-travel-puzzle-games',
+  'anomaly-detection-games-online',
+  'games-like-observation-duty',
+  'anomaly-horror-games',
+  'beginner-guide',
+] as const
+
 // 首页精选实体卡 — ANOMAL 以 cases 为核心(codex 域 4 个案件)。
 // meta 各字段分开存,由组件用 i18n 拼装 —— 避免英文硬编码,扩语言时无法翻译。
 // emoji 是首页装饰保留手写。slug 存在性由 internal-links.test 守护。

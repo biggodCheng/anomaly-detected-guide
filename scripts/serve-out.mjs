@@ -3,6 +3,7 @@
 // MIME 需与生产(Vercel)对齐——尤其 .avif:image/avif。错误的 content-type 会污染
 // Lighthouse 对 <picture type="image/avif"> + preload 匹配行为的测量。
 import { createServer } from 'node:http'
+import { createBrotliCompress, createGzip } from 'node:zlib'
 import { readFile, readFileSync, statSync } from 'node:fs'
 import { join, extname, normalize, sep } from 'node:path'
 
@@ -48,7 +49,18 @@ createServer((req, res) => {
   }
   readFile(candidates[0], (err, data) => {
     if (err) { res.writeHead(404); res.end('404'); return }
-    res.writeHead(200, { ...baseHeaders, 'content-type': mime[extname(candidates[0])] || 'application/octet-stream' })
+    const type = mime[extname(candidates[0])] || 'application/octet-stream'
+    const enc = String(req.headers['accept-encoding'] || '')
+    const compressible = /^(text\/|application\/(javascript|json|xml|wasm))/.test(type) || type === 'image/svg+xml'
+    if (compressible && /br/.test(enc)) {
+      res.writeHead(200, { ...baseHeaders, 'content-type': type, 'content-encoding': 'br', vary: 'accept-encoding' })
+      const stream = createBrotliCompress(); stream.pipe(res); stream.end(data); return
+    }
+    if (compressible && /gzip/.test(enc)) {
+      res.writeHead(200, { ...baseHeaders, 'content-type': type, 'content-encoding': 'gzip', vary: 'accept-encoding' })
+      const stream = createGzip(); stream.pipe(res); stream.end(data); return
+    }
+    res.writeHead(200, { ...baseHeaders, 'content-type': type })
     res.end(data)
   })
 }).listen(port, () => console.log(`serving ${root} at http://localhost:${port}`))

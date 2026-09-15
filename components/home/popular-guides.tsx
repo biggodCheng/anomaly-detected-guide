@@ -1,24 +1,16 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getAllGuides } from '@/data/guides'
+import { featuredGuideSlugs } from '@/data/homepage'
 import { type Locale } from '@/i18n/routing'
 import { localePath } from '@/lib/site'
-
-// SEO-optimized guides to highlight on homepage (in priority order)
-const FEATURED_SLUGS = [
-  'time-travel-puzzle-games',
-  'anomaly-detection-games-online',
-  'games-like-observation-duty',
-  'anomaly-horror-games',
-  'beginner-guide',
-]
 
 export async function PopularGuides({ locale }: { locale: string }) {
   const t = await getTranslations({ locale, namespace: 'Home' })
   const allGuides = getAllGuides(locale as Locale)
   // Show featured SEO guides first, then remaining guides
-  const featured = FEATURED_SLUGS.map((slug) => allGuides.find((g) => g.slug === slug)).filter((g): g is NonNullable<typeof g> => g != null)
-  const remaining = allGuides.filter((g) => !FEATURED_SLUGS.includes(g.slug))
+  const featured = featuredGuideSlugs.map((slug) => allGuides.find((g) => g.slug === slug)).filter((g): g is NonNullable<typeof g> => g != null)
+  const remaining = allGuides.filter((g) => !featuredGuideSlugs.includes(g.slug as (typeof featuredGuideSlugs)[number]))
   const guides = [...featured, ...remaining]
   return (
     <section>
