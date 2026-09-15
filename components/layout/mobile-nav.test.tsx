@@ -12,12 +12,9 @@ function ui() {
   )
 }
 
-/** base-ui 弹层由 pointer 事件序列打开(jsdom 需 polyfill + 完整序列) */
+/** 零依赖抽屉:受控按钮直接 click 打开(createPortal 到 body,查询跨 portal 生效) */
 function openDrawer() {
-  const trigger = screen.getByRole('button', { name: 'Menu' })
-  fireEvent.pointerDown(trigger, { button: 0 })
-  fireEvent.pointerUp(trigger, { button: 0 })
-  fireEvent.click(trigger, { button: 0, detail: 1 })
+  fireEvent.click(screen.getByRole('button', { name: 'Menu' }))
 }
 
 describe('MobileNav', () => {

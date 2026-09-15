@@ -17,6 +17,13 @@
     "validate": "npm run typecheck && npm run lint && npm run test:run && npm run check:swap",
     "hero:avif": "node scripts/make-hero-avif.mjs"
   },
+  "browserslist": [
+    "chrome >= 104",
+    "edge >= 104",
+    "firefox >= 104",
+    "safari >= 15.4",
+    "ios_saf >= 15.4"
+  ],
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "class-variance-authority": "^0.7.1",

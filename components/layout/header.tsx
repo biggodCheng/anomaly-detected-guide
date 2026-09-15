@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { LanguageSwitcher } from '@/components/i18n/language-switcher'
+import { LanguageSwitcherSlot } from '@/components/i18n/language-switcher-slot'
 import { MobileNav } from '@/components/layout/mobile-nav'
 import { SearchTrigger } from '@/components/search/search-trigger'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
@@ -35,7 +35,7 @@ export async function Header({ locale }: { locale: string }) {
           <MobileNav />
           <SearchTrigger />
           <ThemeToggle />
-          {routing.locales.length > 1 && <LanguageSwitcher />}
+          {routing.locales.length > 1 && <LanguageSwitcherSlot />}
         </div>
       </div>
     </header>
